@@ -1,4 +1,4 @@
-<p align="center"><a href="https://ODACLE.com" target="_blank"><img src="https://raw.githubusercontent.com/Teuku-Nabil/INF206-2022-RI1-ODACLE/main/public/assests/images/2022-02-05-16-13-www.canva%202.png" width="400"></a></p>
+<p align="center"><a href="https://ODACLE.com" target="_blank"><img src="https://raw.githubusercontent.com/Teuku-Nabil/INF206-2022-RI1-ODACLE/main/public/assets/images/ODACLE%20Logo.png" width="400"></a></p>
 
 ## About ODACLE
 
