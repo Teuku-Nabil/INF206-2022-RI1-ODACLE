@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <p align="center"><a href="https://ODACLE.com" target="_blank"><img src="https://raw.githubusercontent.com/Teuku-Nabil/INF206-2022-RI1-ODACLE/main/public/assets/images/ODACLE%20Logo.png" width="400"></a></p>
 
+=======
+>>>>>>> main
 ## About ODACLE
 
 ODACLE merupakan aplikasi berbasis web yang berfokus pada layanan klinik gigi. ODACLE di kembangkan berrdasarkan hasil observasi lapangan oleh para pengembang, dimana banyak pasien yang mengalami kesulitan saat melakukan registrasi dan masalah dalam pemilihan dokter. ODACLE menyediakan beberapa fitur, diantaranya:
