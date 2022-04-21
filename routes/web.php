@@ -27,6 +27,6 @@ Route::get('/daftar', function () {
     return view('daftar');
 });
 
-Route::get('/tes', function () {
-    return view('background');
+Route::get('/bg', function () {
+    return view('template/background');
 });
