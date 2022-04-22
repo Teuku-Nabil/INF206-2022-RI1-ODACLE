@@ -26,3 +26,7 @@ Route::get('/login', function () {
 Route::get('/daftar', function () {
     return view('daftar');
 });
+
+Route::get('/bg', function () {
+    return view('template/background');
+});
