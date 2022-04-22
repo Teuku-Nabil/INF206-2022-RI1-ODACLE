@@ -13,14 +13,14 @@
     <div class="login-form">
         <div class=login-half>
             <h1>MASUK</h1>
-            <form>
+            <form action="" method="post">
                 <div class="form-group">
                     <h3>Username</h3>
                     <input type="text" name="Username" class="form-control" placeholder="Masukkan Username">
                 </div>
                 <div class="form-group">
                     <h3>Password</h3>
-                    <input type="date" name="password" class="form-control" placeholder="Masukkan Password">
+                    <input type="password" name="password" class="form-control" placeholder="Masukkan Password">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block">MASUK</button>
