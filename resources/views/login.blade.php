@@ -20,7 +20,7 @@
                 </div>
                 <div class="form-group">
                     <h3>Password</h3>
-                    <input type="date" name="password" class="form-control" placeholder="Masukkan Password">
+                    <input type="password" name="password" class="form-control" placeholder="Masukkan Password">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block">MASUK</button>

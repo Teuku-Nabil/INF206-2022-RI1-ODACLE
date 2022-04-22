@@ -15,51 +15,38 @@
     <title>Daftar</title>
 </head>
 <body>
-        <form action="action_page.php">
+        <form action="action_page.php" class="daftar">
             <div class="container justify-content-center">
                 <h1>DAFTAR</h1>
-                <p>Please fill in this form to create an account.</p>
+                <form>
+                    <div class="form-group">
+                        <label>Nama</label>
+                        <input type="textarea" name="nama" class="form-control" placeholder="Masukkan Nama">
+                    </div>
+                    <div class="form-group">
+                        <label>NIK</label>
+                        <input type="textarea" name="nik" class="form-control" placeholder="Masukkan Password">
+                    </div>
+                    <div class="form-group">
+                        <label>Tanggal Lahir</label>
+                        <input type="date" name="tanggal-lahir" class="form-control" placeholder="Masukkan Password">
+                    </div>
+                    <div class="form-group">
+                        <label>No HP </label>
+                        <input type="textarea" name="no-hp" class="form-control" placeholder="Masukkan Password">
+                    </div>
+                    <div class="form-group">
+                        <label>Email </label>
+                        <input type="textarea" name="email" class="form-control" placeholder="Masukkan Password">
+                    </div>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Nama </label>
-                            <input type="textarea" name="nama" class="form-control">
-                        </div>
+                    <center><button type="submit" class="registerbtn" >Selanjutnya</button></center>
+
+                    <div class="container-signin" style="text-align: center">
+                        <p>Already have an account? <a href="login">Sign in</a>.</p>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>NIK </label>
-                            <input type="textarea" name="nik" class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Tanggal Lahir : </label>
-                            <input type="date" name="tgllahir" class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>No HP </label>
-                            <input type="textarea" name="NoHp" class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Email </label>
-                            <input type="textarea" name="Email" class="form-control">
-                        </div>
-                    </div>
-                </div>
-            
-                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-                <button type="submit" class="registerbtn">Selanjutnya</button>
-                <div class="container signin">
-                    <p>Already have an account? <a href="login">Sign in</a>.</p>
-                </div>
-            </div>
-            
+                </form>
+
         </form>
 
         <!-- Bootstrap js -->
