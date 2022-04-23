@@ -19,15 +19,15 @@
                 alert("{{ session('error') }}");
             </script>
             @endif
-            <form action="{{ route('actionlogin') }}" method="post">
+            <form action="/login" method="post">
                 @csrf
                 <div class="form-group">
                     <h3>Email</h3>
-                    <input type="text" name="email" class="form-control" placeholder="Masukkan Email">
+                    <input type="email" name="email" class="form-control" placeholder="email@example.com" autofocus required>
                 </div>
                 <div class="form-group">
                     <h3>Password</h3>
-                    <input type="password" name="password" class="form-control" placeholder="Masukkan Password">
+                    <input type="password" name="password" class="form-control" placeholder="Masukkan Password" required>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block">MASUK</button>
