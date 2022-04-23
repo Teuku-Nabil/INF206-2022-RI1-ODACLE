@@ -11,18 +11,23 @@
 
     <link rel="stylesheet" href="style/halamanawal.css">
     <link rel="stylesheet" href="style/daftar.css">
+    <link rel="stylesheet" href="style/dokter/jadwal-saya.css">
 
     <title>Daftar</title>
 </head>
 <body>
 
-    <h2>HTML Table</h2>
+    <h2>Jadwal Praktik Dokter</h2>
 
-<table>
+<table class="table table-striped">
     <tr>
-        <th>Company</th>
-        <th>Contact</th>
-        <th>Country</th>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Umur</th>
+        <th>No.hp</th>
+        <th>Hari</th>
+        <th>Tanggal Berobat</th>
+        <th>Keterangan</th>
     </tr>
     <tr>
         <td>Alfreds Futterkiste</td>
@@ -56,7 +61,7 @@
     </tr>
 </table>
 
-    <!-- Bootstrap js -->
+     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>

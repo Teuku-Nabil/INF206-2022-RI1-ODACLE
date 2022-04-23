@@ -30,3 +30,9 @@ Route::get('/daftar', function () {
 Route::get('/bg', function () {
     return view('template/background');
 });
+
+
+// dokter
+Route::get('/jadwal-pasien-dokter', function () {
+    return view('dokter/jadwal-saya');
+});
