@@ -13,10 +13,16 @@
     <div class="login-form">
         <div class=login-half>
             <h1>MASUK</h1>
-            <form>
+            @if(session('error'))
+            <script>
+                alert("{{ session('error') }}");
+            </script>
+            @endif
+            <form action="{{ route('actionlogin') }}" method="post">
+                @csrf
                 <div class="form-group">
-                    <h3>Username</h3>
-                    <input type="text" name="Username" class="form-control" placeholder="Masukkan Username">
+                    <h3>Email</h3>
+                    <input type="text" name="email" class="form-control" placeholder="Masukkan Email">
                 </div>
                 <div class="form-group">
                     <h3>Password</h3>
@@ -30,7 +36,7 @@
         <div class="reg">
             <h3>Belum punya akun? <a href="daftar">Daftar</a></h3>
         </div>
-        <div class="garis-tengah">      
+        <div class="garis-tengah">
         </div>
         <div class="desc">
             <h1>Welcome Back</h1>
