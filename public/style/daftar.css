@@ -3,11 +3,8 @@
 /* Add padding to containers */
 .container {
   padding: 16px;
-  margin-top: 50px;
   background-color: white;
   border-radius: 15px;
-  /* height: 300px;
-  width: 700px;  */
 }
 
 .container h1 {
@@ -40,12 +37,13 @@ hr {
 .registerbtn {
   background-color: #04AA6D;
   color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
+  padding: 12px 20px;
+  margin: 50px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 25%;
   opacity: 0.9;
+  border-radius: 15px;
 }
 
 .registerbtn:hover {
@@ -61,3 +59,19 @@ a {
 .signin {
   text-align: center;
 }
+
+.form-group {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 15px;
+}
+
+.daftar {
+  margin: 50px 450px;
+  border-radius: 15px;
+  padding: 15px 15px;
+}
+
+
+
+
