@@ -19,13 +19,11 @@ Route::get('/', function () {
     return view('halamanawal');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login')->middleware('guest');
+Route::post('/login', [App\Http\Controllers\LoginController::class, 'actionlogin']);
 
-Route::get('/daftar', function () {
-    return view('daftar');
-});
+Route::get('/daftar', [App\Http\Controllers\RegisterController::class, 'daftar'])->middleware('guest');
+Route::post('/daftar', [App\Http\Controllers\RegisterController::class, 'simpan']);
 
 Route::get('/bg', function () {
     return view('template/background');
