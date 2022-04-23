@@ -23,6 +23,7 @@ Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->na
 Route::post('/login', [App\Http\Controllers\LoginController::class, 'actionlogin']);
 
 Route::get('/daftar', [App\Http\Controllers\RegisterController::class, 'daftar'])->middleware('guest');
+Route::post('/daftar', [App\Http\Controllers\RegisterController::class, 'simpan']);
 
 Route::get('/bg', function () {
     return view('template/background');

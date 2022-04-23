@@ -18,7 +18,8 @@
 </head>
 
 <body>
-        <form action="action_page.php" class="daftar">
+        <form action="/daftar" method="post" class="daftar">
+            @csrf
             <div class="container justify-content-center">
                 <h1>DAFTAR</h1>
                 <form>
@@ -28,21 +29,25 @@
                     </div>
                     <div class="form-group">
                         <label>NIK</label>
-                        <input type="textarea" name="nik" class="form-control" placeholder="Masukkan Password">
+                        <input type="textarea" name="nik" class="form-control" placeholder="Masukkan NIK">
                     </div>
                     <div class="form-group">
                         <label>Tanggal Lahir</label>
-                        <input type="date" name="tanggal-lahir" class="form-control" placeholder="Masukkan Password">
+                        <input type="date" name="tanggal-lahir" class="form-control" placeholder="Masukkan Tanggal Lahir">
                     </div>
                     <div class="form-group">
                         <label>No HP </label>
-                        <input type="textarea" name="no-hp" class="form-control" placeholder="Masukkan Password">
+                        <input type="textarea" name="no-hp" class="form-control" placeholder="Masukkan No HP">
                     </div>
                     <div class="form-group">
                         <label>Email </label>
-                        <input type="email" name="email" class="form-control" placeholder="Masukkan Password">
+                        <input type="email" name="email" class="form-control" placeholder="email@example.com">
                     </div>
-
+                    <div class="form-group">
+                        <label>Password </label>
+                        <input type="password" name="password" class="form-control" placeholder="Masukkan Password">
+                    </div>
+                    
                     <center><button type="submit" class="registerbtn" >Selanjutnya</button></center>
 
                     <div class="container-signin" style="text-align: center">
