@@ -51,16 +51,6 @@
                 </form>
 
         </form>
-
-            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-            <button type="submit" class="registerbtn">Selanjutnya</button>
-            <div class="container signin">
-                <p>Already have an account? <a href="login">Sign in</a>.</p>
-            </div>
-        </div>
-
-    </form>
-
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
