@@ -27,28 +27,27 @@ body{
 }
 
 .btn-wrapper p {
-    margin: 50px 0;
+    margin: 50px ;
 }
 
 .masuk {
     background-color: white;
     margin-right: 10px;
 }
-  
+
 .daftar{
     background-color: white;
 }
 
 .btn {
-    padding: 20px 50px;
+    padding: 20px 40px;
     color: black;
     display: inline-block;
     opacity: 0.8;
     border-radius: 40px;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .btn:hover{
     opacity: 1;
 }
-  
