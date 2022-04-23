@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon/blue.png" type="image/x-icon">
     <link rel="stylesheet" href="style/login.css">
     <title>Login</title>
 </head>
@@ -18,15 +19,15 @@
                 alert("{{ session('error') }}");
             </script>
             @endif
-            <form action="{{ route('actionlogin') }}" method="post">
+            <form action="/login" method="post">
                 @csrf
                 <div class="form-group">
                     <h3>Email</h3>
-                    <input type="text" name="email" class="form-control" placeholder="Masukkan Email">
+                    <input type="email" name="email" class="form-control" placeholder="email@example.com" autofocus required>
                 </div>
                 <div class="form-group">
                     <h3>Password</h3>
-                    <input type="password" name="password" class="form-control" placeholder="Masukkan Password">
+                    <input type="password" name="password" class="form-control" placeholder="Masukkan Password" required>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block">MASUK</button>

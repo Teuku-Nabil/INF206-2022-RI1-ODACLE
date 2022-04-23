@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
-    public function store(){
-        
+    public function daftar(){
+        return view('daftar');
     }
 }
