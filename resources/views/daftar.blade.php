@@ -37,7 +37,7 @@
                     </div>
                     <div class="form-group">
                         <label>Email </label>
-                        <input type="textarea" name="email" class="form-control" placeholder="Masukkan Password">
+                        <input type="email" name="email" class="form-control" placeholder="Masukkan Password">
                     </div>
 
                     <center><button type="submit" class="registerbtn" >Selanjutnya</button></center>
