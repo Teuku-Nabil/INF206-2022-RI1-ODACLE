@@ -1,9 +1,19 @@
-/* th, td {
-    padding: 0px 10px;
+/* .table {
+    margin-top: 40px
 } */
 
-/* .table-responsive {
+.table-container {
     background-color: white;
     border-radius: 15px;
-    padding: 50px 50px;
-} */
+    margin: 50px 150px;
+    border-radius: 15px;
+}
+
+.table-logo {
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.logo {
+    border-radius: 15px;
+}

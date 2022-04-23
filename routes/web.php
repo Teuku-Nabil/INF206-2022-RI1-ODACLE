@@ -33,6 +33,6 @@ Route::get('/bg', function () {
 
 
 // dokter
-Route::get('/jadwal-pasien-dokter', function () {
+Route::get('/jadwal-saya', function () {
     return view('dokter/jadwal-saya');
 });
