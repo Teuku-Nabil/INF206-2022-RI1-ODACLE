@@ -31,3 +31,11 @@ Route::get('/beranda', [App\Http\Controllers\BerandaController::class, 'index'])
 Route::get('/bg', function () {
     return view('template/background');
 });
+
+Route::get('/aktor', function () {
+    return view('aktor');
+});
+
+Route::get('/suksesdaftar', function () {
+    return view('suksesdaftar');
+});
