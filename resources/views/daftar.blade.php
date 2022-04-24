@@ -48,7 +48,7 @@
                         <input type="password" name="password" class="form-control" placeholder="Masukkan Password">
                     </div>
                     
-                    <center><button type="submit" class="registerbtn" >Selanjutnya</button></center>
+                    <center><button type="submit" class="registerbtn" >Buat Akun</button></center>
 
                     <div class="container-signin" style="text-align: center">
                         <p>Already have an account? <a href="login">Sign in</a>.</p>
