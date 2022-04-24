@@ -4,7 +4,7 @@ body {
 }
 
 .login-form {
-    width: 900px;
+    width: 500px;
     height: 500px;
     background-color: rgb(255, 255, 255, 0.5);
     margin: 150px auto;
@@ -48,45 +48,6 @@ body {
     font-weight: bold;
 }
 
-.reg{
+.submit{
     margin:-120px 134px;
-}
-
-.garis-tengah {
-    position: relative;
-    top: -315px;
-    left: 380px;
-    margin:5px 100px;
-    width: 7px;
-    height: 500px;
-    border-radius: 10px;
-    background-color: black;
-}
-
-.desc {
-    position: relative;
-    top: -755px;
-    left: 550px;
-    width: 500px;
-}
-
-.img-logo {
-    width: 230px;
-    height: 130px;
-    margin-bottom: 40px;
-    padding-left: 35px;
-}
-
-.desc h1 {
-    margin-left: -20px;
-    margin-bottom: -20px;
-}
-
-.desc h3 {
-    margin-left: -20px;
-    margin-bottom: 50px;
-}
-
-.slog {
-    text-decoration: underline;
 }
