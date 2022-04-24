@@ -11,8 +11,8 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="assets/icon/blue.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/halamanawal.css">
     <link rel="stylesheet" href="style/daftar.css">
+    <link rel="stylesheet" href="style/suksesdaftar.css">
 
     <title></title>
 </head>
