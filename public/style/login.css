@@ -90,3 +90,8 @@ body {
 .slog {
     text-decoration: underline;
 }
+
+.alert{
+    color: red;
+    font-weight: bold;
+}
