@@ -21,9 +21,12 @@ Route::get('/', function () {
 
 Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login')->middleware('guest');
 Route::post('/login', [App\Http\Controllers\LoginController::class, 'actionlogin']);
+Route::post('/logout', [App\Http\Controllers\LoginController::class, 'logout']);
 
 Route::get('/daftar', [App\Http\Controllers\RegisterController::class, 'daftar'])->middleware('guest');
 Route::post('/daftar', [App\Http\Controllers\RegisterController::class, 'simpan']);
+
+Route::get('/beranda', [App\Http\Controllers\BerandaController::class, 'index'])->middleware('auth');
 
 Route::get('/bg', function () {
     return view('template/background');

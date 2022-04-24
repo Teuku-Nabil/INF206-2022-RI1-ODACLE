@@ -11,7 +11,7 @@ class LoginController extends Controller
     public function login()
     {
         if (Auth::check()) {
-            return redirect('welcome');
+            return redirect('/beranda');
         }else{
             return view('login');
         }
@@ -26,9 +26,15 @@ class LoginController extends Controller
 
         if (Auth::Attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('welcome');
+            return redirect()->intended('/beranda');
         }
 
         return back()->with('error', 'Email atau Password salah');
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('login');
     }
 }

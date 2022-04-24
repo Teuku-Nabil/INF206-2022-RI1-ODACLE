@@ -18,9 +18,11 @@ class RegisterController extends Controller
             'tanggal-lahir' => 'required',
             'no-hp' => 'required',
             'email' => 'required|email|unique:users',
-            'password' => 'required'
+            'password' => 'required|min:5'
         ]);
 
         User::create($validatedData);
+        $request->session()->flash('status', 'Pendaftaran berhasil! Silahkan login.');
+        Return redirect('/login');
     }
 }

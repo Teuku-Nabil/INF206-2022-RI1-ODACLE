@@ -11,23 +11,30 @@
 </head>
 
 <body>
+    @if(session()->has('status'))
+    <script>
+        alert('{{ session()->get('status') }}');
+    </script>
+    @endif
     <div class="login-form">
         <div class=login-half>
             <h1>MASUK</h1>
             @if(session('error'))
             <script>
-                alert("{{ session('error') }}");
+            alert("{{ session('error') }}");
             </script>
             @endif
             <form action="/login" method="post">
                 @csrf
                 <div class="form-group">
                     <h3>Email</h3>
-                    <input type="email" name="email" class="form-control" placeholder="email@example.com" autofocus required>
+                    <input type="email" name="email" class="form-control" placeholder="email@example.com" autofocus
+                        required>
                 </div>
                 <div class="form-group">
                     <h3>Password</h3>
-                    <input type="password" name="password" class="form-control" placeholder="Masukkan Password" required>
+                    <input type="password" name="password" class="form-control" placeholder="Masukkan Password"
+                        required>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block">MASUK</button>
