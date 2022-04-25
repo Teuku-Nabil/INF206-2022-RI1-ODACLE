@@ -3,7 +3,6 @@
 
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginDokterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,24 +30,4 @@ Route::get('/beranda', [App\Http\Controllers\BerandaController::class, 'index'])
 
 Route::get('/bg', function () {
     return view('template/background');
-});
-
-Route::get('/aktor', function () {
-    return view('aktor');
-});
-
-Route::get('/suksesdaftar', function () {
-    return view('suksesdaftar');
-});
-
-Route::get('/daftar', function () {
-    return view('daftar');
-});
-
-Route::get('/logindokter', function () {
-    return view('logindokter');
-});
-
-Route::get('/jadwaldokter', function () {
-    return view('jadwaldokter');
 });
