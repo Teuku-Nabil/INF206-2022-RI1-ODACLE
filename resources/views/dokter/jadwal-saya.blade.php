@@ -21,7 +21,7 @@
         <div class="table-logo position-relative" style="background-color: #DDE9FC">
             <img src="assets/images/ODACLE Logo.png" alt="logo-odacle" class="logo position-absolute top-50 start-3 translate-middle-y" style="height: 70px">
             <h2 style="padding-bottom: 20px"><center>Jadwal Praktik Dokter</center></h2>
-            <img src="assets/images/silang.png" alt="silang" class="logo position-absolute top-50 end-0 translate-middle-y">
+            <img src="assets/images/silang.png" alt="silang" class="logo position-absolute top-0 end-0 " style="height: 30px">
         </div>
             <table class="table table-hover table-striped">
             <tr>
@@ -52,6 +52,33 @@
                 <td>Konsultasi Ulang</td>
             </tr>
             <tr style="background-color: #DDE9FC">
+                <td>1</td>
+                <td>Alfreds Futterkiste</td>
+                <td>34</td>
+                <td>082247230922</td>
+                <td>Sabtu</td>
+                <td>29 Maret 2022</td>
+                <td>Konsultasi Ulang</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alfreds Futterkiste</td>
+                <td>34</td>
+                <td>082247230922</td>
+                <td>Sabtu</td>
+                <td>29 Maret 2022</td>
+                <td>Konsultasi Ulang</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alfreds Futterkiste</td>
+                <td>34</td>
+                <td>082247230922</td>
+                <td>Sabtu</td>
+                <td>29 Maret 2022</td>
+                <td>Konsultasi Ulang</td>
+            </tr>
+            <tr>
                 <td>1</td>
                 <td>Alfreds Futterkiste</td>
                 <td>34</td>
