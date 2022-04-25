@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/logindokter.css">
+    <link rel="shortcut icon" href="assets/icon/blue.png" type="image/x-icon">
     <title>Login</title>
 </head>
 
@@ -28,5 +29,5 @@
             </form>
         </div>
         <div class="submit">
-            <h3>Lupa Password? <a href="Register">Register</a></h3>
+            <h3>Lupa Password? Hubungi Admin</h3>
         </div>

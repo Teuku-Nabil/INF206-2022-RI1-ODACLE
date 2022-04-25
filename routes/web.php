@@ -3,7 +3,6 @@
 
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginDokterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +19,10 @@ Route::get('/', function () {
     return view('halamanawal');
 });
 
+Route::get('/aktor', function () {
+    return view('aktor');
+});
+
 Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login')->middleware('guest');
 Route::post('/login', [App\Http\Controllers\LoginController::class, 'actionlogin']);
 Route::post('/logout', [App\Http\Controllers\LoginController::class, 'logout']);
@@ -33,22 +36,6 @@ Route::get('/bg', function () {
     return view('template/background');
 });
 
-Route::get('/aktor', function () {
-    return view('aktor');
-});
-
-Route::get('/suksesdaftar', function () {
-    return view('suksesdaftar');
-});
-
-Route::get('/daftar', function () {
-    return view('daftar');
-});
-
 Route::get('/logindokter', function () {
     return view('logindokter');
-});
-
-Route::get('/jadwaldokter', function () {
-    return view('jadwaldokter');
 });
