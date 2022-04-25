@@ -20,8 +20,25 @@ Route::get('/', function () {
     return view('halamanawal');
 });
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login')->middleware('guest');
+Route::post('/login', [App\Http\Controllers\LoginController::class, 'actionlogin']);
+Route::post('/logout', [App\Http\Controllers\LoginController::class, 'logout']);
+
+Route::get('/daftar', [App\Http\Controllers\RegisterController::class, 'daftar'])->middleware('guest');
+Route::post('/daftar', [App\Http\Controllers\RegisterController::class, 'simpan']);
+
+Route::get('/beranda', [App\Http\Controllers\BerandaController::class, 'index'])->middleware('auth');
+
+Route::get('/bg', function () {
+    return view('template/background');
+});
+
+Route::get('/aktor', function () {
+    return view('aktor');
+});
+
+Route::get('/suksesdaftar', function () {
+    return view('suksesdaftar');
 });
 
 Route::get('/daftar', function () {
@@ -30,4 +47,8 @@ Route::get('/daftar', function () {
 
 Route::get('/logindokter', function () {
     return view('logindokter');
+});
+
+Route::get('/jadwaldokter', function () {
+    return view('jadwaldokter');
 });
