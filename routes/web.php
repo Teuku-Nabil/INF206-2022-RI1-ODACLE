@@ -39,3 +39,7 @@ Route::get('/aktor', function () {
 Route::get('/suksesdaftar', function () {
     return view('suksesdaftar');
 });
+
+Route::get('/jadwaldokter', function () {
+    return view('jadwaldokter');
+});
