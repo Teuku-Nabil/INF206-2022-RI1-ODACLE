@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('halamanawal');
 });
 
+Route::get('/aktor', function () {
+    return view('aktor');
+});
+
 Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login')->middleware('guest');
 Route::post('/login', [App\Http\Controllers\LoginController::class, 'actionlogin']);
 Route::post('/logout', [App\Http\Controllers\LoginController::class, 'logout']);
@@ -30,4 +34,8 @@ Route::get('/beranda', [App\Http\Controllers\BerandaController::class, 'index'])
 
 Route::get('/bg', function () {
     return view('template/background');
+});
+
+Route::get('/logindokter', function () {
+    return view('logindokter');
 });
