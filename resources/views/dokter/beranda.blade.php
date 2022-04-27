@@ -10,8 +10,9 @@
 
         {{-- css custom --}}
         <link rel="stylesheet" href="style/dokter/beranda.css">
+        <link rel="shortcut icon" href="assets/icon/blue.png" type="image/x-icon">
 
-        <title>Hello, world!</title>
+        <title>Beranda</title>
     </head>
     <body>
 
@@ -26,14 +27,6 @@
                         </a>
                     </div>
                 </nav>
-
-                {{-- logo user --}}
-                <div class="position-relative">
-                    <div class="position-absolute top-0 end-0">
-                        <img src="assets/images/user.png" alt="user" height="60px">
-                    </div>
-                </div>
-        
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -51,11 +44,20 @@
                         </li>
                     </ul>
                 </div>
+
+                <h1 class="nama-profil">Om-Om</h1>
+                <div class="position-relative">
+                    <div class="position-absolute top-0 end-10">
+                        <a href="profil">
+                        <img src="assets/images/user.png" type="button" alt="user" height="60px">
+                        </a>
+                    </div>
+                </div>
             </div>
         </nav>
 
         {{-- garis navbar --}}
-        <img src="assets/images/garis.png" alt="garis" width="1535px">
+        <img src="assets/images/garis.png" alt="garis" width="1600px">
         {{-- img user --}}
         
 

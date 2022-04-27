@@ -45,3 +45,8 @@ Route::get('/jadwal-saya', function () {
 Route::get('/beranda-dokter', function () {
     return view('dokter/beranda');
 });
+
+Route::get('/profil', function () {
+    return view('aktor');
+});
+
