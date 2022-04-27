@@ -11,13 +11,13 @@
 
         <!-- custom CSS -->
         <link rel="stylesheet" href="style/template/background.css ">
-        {{-- <link rel="stylesheet" href="style/halamanawal.css"> --}}
+        <link rel="stylesheet" href="style/halamanawal.css">
 
         <title>ODACLE TEMPLATE</title>
     </head>
     <body>
-        
-        {{-- <div class="container">
+{{--         
+        <div class="container">
             <img src="assets/images/ODACLE Logo.png" class="img-logo">
                 <div class="garis"></div>
                 <div class="btn-wrapper">

@@ -36,6 +36,12 @@ Route::get('/bg', function () {
     return view('template/background');
 });
 
-Route::get('/logindokter', function () {
-    return view('logindokter');
+
+// dokter
+Route::get('/jadwal-saya', function () {
+    return view('dokter/jadwal-saya');
+});
+
+Route::get('/beranda-dokter', function () {
+    return view('dokter/beranda');
 });
