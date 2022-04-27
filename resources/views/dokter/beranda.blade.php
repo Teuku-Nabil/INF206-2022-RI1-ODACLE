@@ -27,13 +27,6 @@
                         </a>
                     </div>
                 </nav>
-<<<<<<< Updated upstream
-=======
-
-                
-        
->>>>>>> Stashed changes
-                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -53,10 +46,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">logout</a>
-                        </li>
-                        <li class="navbar-logo position-absolute top-0 end-0" >
-                            <h5 style="float: left">Nama User</h5>
-                            <img src="assets/images/user.png" alt="user" height="50px">
                         </li>
                     </ul>
                 </div>
