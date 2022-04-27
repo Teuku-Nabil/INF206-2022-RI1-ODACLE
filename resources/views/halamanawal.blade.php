@@ -20,6 +20,7 @@
             <a href="daftar" class="btn daftar">Daftar</a>
         </div>
     </div>
+
 </body>
 
 </html>

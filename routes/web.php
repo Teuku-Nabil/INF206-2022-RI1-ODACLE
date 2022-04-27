@@ -34,3 +34,7 @@ Route::get('/bg', function () {
 Route::get('/jadwal-saya', function () {
     return view('dokter/jadwal-saya');
 });
+
+Route::get('/beranda-dokter', function () {
+    return view('dokter/beranda');
+});
