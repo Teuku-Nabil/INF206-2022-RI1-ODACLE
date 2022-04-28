@@ -51,7 +51,9 @@ Route::get('/profil', function () {
     return view('aktor');
 });
 
-Route :: get('/logindokter', [App\Http\Controllers\LogindokterController:: class, 'logindokter']);
+Route::get('/logindokter', [App\Http\Controllers\LogindokterController:: class, 'logindokter'])->name('logindokter');
+Route::post('actionlogin', [App\Http\Controllers\LogindokterController:: class, 'actionlogin'])->name('actionlogin');
+Route::get('actionlogout', [App\Http\Controllers\LogindokterController:: class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
 
 
