@@ -29,5 +29,5 @@
             </form>
         </div>
         <div class="submit">
-            <h3>Lupa Password? Hubungi Admin</h3>
+            <h4>Lupa Password? Hubungi Admin</h4>
         </div>

@@ -4,6 +4,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,4 +50,8 @@ Route::get('/beranda-dokter', function () {
 Route::get('/profil', function () {
     return view('aktor');
 });
+
+Route :: get('/logindokter', [App\Http\Controllers\LogindokterController:: class, 'logindokter']);
+
+
 
