@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('nik');
             $table->date('tanggal-lahir');
             $table->string('no-hp');
+            $table->string('level');
             $table->string('email')->unique();
             $table->string('password');
             $table->timestamp('email_verified_at')->nullable();

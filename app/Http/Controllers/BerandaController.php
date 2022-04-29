@@ -10,4 +10,9 @@ class BerandaController extends Controller
     {
         return view('beranda');
     }
+
+    public function berandadokter()
+    {
+        return view('dokter.beranda');
+    }
 }

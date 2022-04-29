@@ -1,0 +1,43 @@
+.antrian {
+    color: black;
+    background-color: white;
+    padding: 50px 70px;
+    margin: 50px 450px;
+    border-radius: 15px;
+}
+
+.antrian h2 {
+    text-align: center;
+}
+
+.content-antrian {
+    margin-top: 40px;
+}
+
+.button-antrian {
+    margin-top: 50px;
+}
+
+.button-cetak {
+    margin-top: 25px;
+}
+
+.button-lanjut, .button-cetak {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    opacity: 0.9;
+    border-radius: 15px;
+}
+
+.button-lanjut, .button-cetak:hover {
+    opacity:1;
+}
+
+.content-grup {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}

@@ -14,10 +14,11 @@
     <div class="login-form">
         <div class=login-half>
             <h1>MASUK</h1>
-            <form>
+            <form action="/login-dokter" method="post">
+                @csrf
                 <div class="form-group">
-                    <h3>Username</h3>
-                    <input type="text" name="Username" class="form-control" placeholder="Masukkan Username">
+                    <h3>Email</h3>
+                    <input type="email" name="email" class="form-control" placeholder="Email@example.com">
                 </div>
                 <div class="form-group">
                     <h3>Password</h3>

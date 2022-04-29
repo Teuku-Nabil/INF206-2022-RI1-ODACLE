@@ -24,7 +24,7 @@
         <div class="btn-wrapper justify-content-center">
             <div class="pilihan">
                 <img src="assets/images/dokter.png" class="img-logo">
-                <a href="logindokter" class="btn btn-primary btn-block">Dokter</a>
+                <a href="login-dokter" class="btn btn-primary btn-block">Dokter</a>
             </div>
             <p></p>
             <div class="pilihan">
