@@ -54,7 +54,7 @@
                 <div class="position-relative">
                     <div class="position-absolute top-0 end-10">
                         <a href="profil">
-                        <img src="assets/images/user.png" type="button" alt="user" height="60px">
+                            <img src="assets/images/user.png" type="button" alt="user" height="60px">
                         </a>
                     </div>
                 </div>
