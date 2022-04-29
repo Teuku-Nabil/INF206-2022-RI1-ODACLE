@@ -33,7 +33,11 @@ Route::post('/daftar', [App\Http\Controllers\RegisterController::class, 'simpan'
 
 Route::get('/beranda', [App\Http\Controllers\BerandaController::class, 'index'])->middleware('auth');
 
-Route::get('/bg', function () {
+Route::get('/beranda', function () {
+    return view('beranda');
+});
+
+Route::get('/background', function () {
     return view('template/background');
 });
 
