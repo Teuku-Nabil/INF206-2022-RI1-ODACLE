@@ -16,16 +16,7 @@ class LoginController extends Controller
             return view('login');
         }
     }
-
-    public function logindokter()
-    {
-        if (Auth::check()) {
-            return redirect('/beranda-dokter');
-        }else{
-            return view('dokter.logindokter');
-        }
-    }
-
+    
     public function actionlogin(Request $request)
     {
         $credentials = $request->validate([
