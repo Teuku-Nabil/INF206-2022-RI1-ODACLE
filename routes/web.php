@@ -4,6 +4,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,3 +55,5 @@ Route::get('/profil', function () {
 Route::get('/antrian', function () {
     return view('user/antrian');
 });
+
+
