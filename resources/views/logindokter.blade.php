@@ -14,13 +14,7 @@
     <div class="login-form">
         <div class=login-half>
             <h1>MASUK</h1>
-            @if(Session('error'))
-            <div class="alert alert-danger">
-                <b>Sorry!</b> {{ Session('error') }}
-            </div>
-            @endif
-            <form action="/logindokter" method="post">
-            @csrf
+            <form >
                 <div class="form-group">
                     <h3>Username</h3>
                     <input type="text" name="Username" class="form-control" placeholder="Masukkan Username">
