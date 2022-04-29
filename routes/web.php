@@ -50,3 +50,6 @@ Route::get('/profil', function () {
     return view('aktor');
 });
 
+Route::get('/antrian', function () {
+    return view('user/antrian');
+});
