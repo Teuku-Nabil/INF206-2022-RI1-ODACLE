@@ -19,16 +19,8 @@ Route::get('/', function () {
     return view('halamanawal');
 });
 
-Route::get('/aktor', function () {
-    return view('aktor');
-});
-
-
 Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login')->middleware('guest');
 Route::post('/login', [App\Http\Controllers\LoginController::class, 'actionlogin']);
-
-Route::get('/login-dokter', [App\Http\Controllers\LoginController::class, 'logindokter'])->name('logindokter')->middleware('guest');
-Route::post('/login-dokter', [App\Http\Controllers\LoginController::class, 'loginaction']);
 
 Route::get('/daftar', [App\Http\Controllers\RegisterController::class, 'daftar'])->middleware('guest');
 Route::post('/daftar', [App\Http\Controllers\RegisterController::class, 'simpan']);
@@ -58,6 +50,7 @@ Route::get('/jadwal-saya', function () {
 Route::get('/profil', function () {
     return view('aktor');
 });
+
 Route::get('/antrian', function () {
     return view('user/antrian');
 });

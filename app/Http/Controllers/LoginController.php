@@ -42,21 +42,7 @@ class LoginController extends Controller
         }
         return back()->with('error', 'Email atau Password salah');
     }
-
-    public function loginaction(Request $request)
-    {
-        $credentials = $request->validate([
-            'email' => 'required|email:dns',
-            'password' => 'required'
-        ]);
-
-        if (Auth::Attempt($credentials)) {
-            $request->session()->regenerate();
-            return redirect()->intended('/beranda-dokter');
-        }
-        return back()->with('error', 'Email atau Password salah');
-    }
-
+    
     public function logoutpasien()
     {
         Auth::logout();
@@ -66,6 +52,6 @@ class LoginController extends Controller
     public function logoutdokter()
     {
         Auth::logout();
-        return redirect('login-dokter');
+        return redirect('login');
     }
 }
