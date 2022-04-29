@@ -16,7 +16,7 @@ class LoginController extends Controller
             return view('login');
         }
     }
-
+    
     public function actionlogin(Request $request)
     {
         $credentials = $request->validate([
@@ -24,15 +24,23 @@ class LoginController extends Controller
             'password' => 'required'
         ]);
 
-        if (Auth::Attempt($credentials)) {
+        if (Auth::Attempt($credentials) && $level = Auth::user()->level == 'pasien') {
             $request->session()->regenerate();
             return redirect()->intended('/beranda');
+        }elseif (Auth::Attempt($credentials) && $level = Auth::user()->level == 'dokter') {
+            $request->session()->regenerate();
+            return redirect()->intended('/beranda-dokter');
         }
-
         return back()->with('error', 'Email atau Password salah');
     }
+    
+    public function logoutpasien()
+    {
+        Auth::logout();
+        return redirect('login');
+    }
 
-    public function logout()
+    public function logoutdokter()
     {
         Auth::logout();
         return redirect('login');

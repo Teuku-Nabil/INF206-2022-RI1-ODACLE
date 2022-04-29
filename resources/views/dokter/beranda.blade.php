@@ -45,7 +45,7 @@
                             <a class="nav-link" href="#">Jadwal Hari ini</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">logout</a>
+                            <a class="nav-link" href="/logout-dokter" method="post">logout</a>
                         </li>
                     </ul>
                 </div>
