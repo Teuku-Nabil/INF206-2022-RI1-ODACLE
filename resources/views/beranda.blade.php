@@ -40,7 +40,7 @@
                             <a class="nav-link" href="#">Konsultasi Lanjutan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">logout</a>
+                            <a class="nav-link" href="logout">logout</a>
                         </li>
                     </ul>
                 </div>
