@@ -15,7 +15,7 @@
         <img src="assets/images/ODACLE Logo.png" class="img-logo">
         <div class="garis"></div>
         <div class="btn-wrapper justify-content-center">
-            <a href="aktor" class="btn masuk">Masuk</a>
+            <a href="login" class="btn masuk">Masuk</a>
             <p></p>
             <a href="daftar" class="btn daftar">Daftar</a>
         </div>
