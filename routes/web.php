@@ -53,3 +53,7 @@ Route::get('/profil', function () {
 Route::get('/antrian', function () {
     return view('user/antrian');
 });
+
+Route::get('/pilih-spesialis', function () {
+    return view('user/pilih-spesialis');
+});
