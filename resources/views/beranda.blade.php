@@ -23,7 +23,7 @@
                 <nav class="navbar navbar-light">
                     <div class="container">
                         <a class="navbar-brand" href="#">
-                            <img src="assets/images/ODACLE Logo.png" alt="logo odacle" height="60">
+                            <img src="{{ asset('assets/images/' . $user->image) }}" alt="logo odacle" height="60">
                         </a>
                     </div>
                 </nav>
@@ -45,7 +45,7 @@
                     </ul>
                 </div>
 
-                <h1 class="nama-profil">Om-Om</h1>
+                <h1 class="nama-profil">{{Auth::user()->nama}}</h1>
                 <div class="position-relative">
                     <div class="position-absolute top-0 end-10">
                         <a href="profil">
