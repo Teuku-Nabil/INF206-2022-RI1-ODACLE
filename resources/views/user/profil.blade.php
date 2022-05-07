@@ -51,7 +51,8 @@
             <div class="position-relative">
                 <div class="position-absolute top-0 end-10">
                     <a href="profil">
-                        <img src="assets/images/user.png" type="button" alt="user" height="60px">
+                        <img src="{{ asset('assets/images/' . Auth::user()->image) }}" class="image rounded-circle" type="button" alt="user"
+                        style="width: 80px;height: 80px; padding: 10px; margin: 0px;">
                     </a>
                 </div>
             </div>
@@ -62,6 +63,114 @@
     <img src="assets/images/garis.png" alt="garis" width="1600px">
 
     {{-- konten --}}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card-header">
+                    Profile
+                </div>
+
+                <div class="card-body">
+                    <form>
+                        <div class="col">
+                            <img class="img-profile mx-auto d-block rounded-circle"
+                                src="{{ asset('assets/images/'. Auth::user()->image) }}" alt="user" style="width: 200px; height: 200px; padding: 10px; margin: 0px;">
+                            <a class="btn btn-success" href="/updatefoto">Update Foto</a>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="nama" class="col-md-4 col-form-label text-md-right">Nama</label>
+
+                            <div class="col">
+                                <input id="nama" type="text" readonly
+                                    class="form-control @error('nama') is-invalid @enderror" name="nama"
+                                    value="{{ old('nama', Auth::user()->nama) }}" autocomplete="nama" autofocus>
+
+                                @error('nama')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="nik" class="col-md-4 col-form-label text-md-right">NIK</label>
+
+                            <div class="col">
+                                <input id="nik" type="text" readonly
+                                    class="form-control @error('nik') is-invalid @enderror" name="nik"
+                                    value="{{ old('nik', Auth::user()->nik) }}" autocomplete="nik" autofocus>
+
+                                @error('nik')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="tanggallahir" class="col-md-4 col-form-label text-md-right">Tanggal
+                                Lahir</label>
+
+                            <div class="col">
+                                <input id="tanggallahir" type="date" readonly
+                                    class="form-control @error('date') is-invalid @enderror" name="tanggallahir"
+                                    value="{{ old('tanggallahir', Auth::user()->tanggallahir) }}" autocomplete="date">
+
+                                @error('date')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="nohp" class="col-md-4 col-form-label text-md-right">Nomor HP</label>
+
+                            <div class="col">
+                                <input id="nohp" type="text" readonly
+                                    class="form-control @error('nohp') is-invalid @enderror" name="nohp"
+                                    value="{{ old('nohp', Auth::user()->nohp) }}" autocomplete="nohp" autofocus>
+
+                                @error('nohp')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail</label>
+
+                            <div class="col">
+                                <input id="email" type="email" readonly
+                                    class="form-control @error('email') is-invalid @enderror" name="email"
+                                    value="{{ old('email', Auth::user()->email) }}" autocomplete="email">
+
+                                @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6 offset-md-4">
+                                <a type="button" class="btn btn-warning" href="/updateprofil">
+                                    Update Profile
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

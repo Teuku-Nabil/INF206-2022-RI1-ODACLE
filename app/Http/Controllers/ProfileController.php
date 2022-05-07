@@ -21,8 +21,7 @@ class ProfileController extends Controller
             "nik" => "required",
             "tanggallahir" => "required",
             "nohp" => "required",
-            "email" => "required|string|email|max:255|unique:users,email,".$user->id,
-            "image" => "required|image|mimes:jpeg,png,jpg,gif,svg|max:2048"
+            "email" => "required|string|email|max:255|unique:users,email,".$user->id
         ]);
         $user->update($request->all());
         Session::flash('flash_message', 'Profil berhasil diupdate.');
@@ -34,5 +33,22 @@ class ProfileController extends Controller
         return view('user.updateprofil', [
             'user' => $request->user()
         ]);
+    }
+
+    public function foto()
+    {
+        return view('user.foto');
+    }
+
+    public function upload(Request $request)
+    {
+        if($request->hasFile('image')){
+            $filename = $request->image->getClientOriginalName();
+            $request->image->move(public_path('assets/images/'), $filename);
+            Auth()->user()->update(['image'=>$filename]);
+            
+            return redirect()->route('profil.index');
+        }
+        return redirect()->back();
     }
 }

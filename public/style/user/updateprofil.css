@@ -36,6 +36,6 @@ body {
     padding-bottom: 20px;
 }
 
-.profile-widget {
-    padding-top: 30px;
+.btn{
+    border-radius: 15px;
 }

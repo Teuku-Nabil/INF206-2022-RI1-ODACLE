@@ -13,7 +13,7 @@
 
     <link rel="shortcut icon" href="assets/icon/blue.png" type="image/x-icon">
     <link rel="stylesheet" href="style/user/updateprofil.css">
-    <title>Profil</title>
+    <title>Update Profil</title>
 </head>
 
 <body>
@@ -51,7 +51,8 @@
             <div class="position-relative">
                 <div class="position-absolute top-0 end-10">
                     <a href="profil">
-                        <img src="{{ asset('assets/images/' . $user->image) }}" type="button" alt="user" height="60px">
+                        <img src="{{ asset('assets/images/' . Auth::user()->image) }}" class="image rounded-circle"
+                            type="button" alt="user" style="width: 80px;height: 80px; padding: 10px; margin: 0px;">
                     </a>
                 </div>
             </div>
@@ -63,117 +64,114 @@
 
     {{-- konten --}}
     <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">
-                    Update Profile
-                </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        Update Profile
+                    </div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('profil.update') }}" enctype="multipart/form-data">
-                        @method('patch')
-                        @csrf
+                    <div class="card-body">
+                        <form method="POST" action="{{ route('profil.update') }}" enctype="multipart/form-data">
+                            @method('patch')
+                            @csrf
 
-                        <div class="card profile-widget">
-                        <img alt="image" src="{{ asset('assets/images/' . $user->image) }}" class="img-fluid"
-                            style="width: 300px; margin: auto; margin-top: -3rem; margin-bottom: -0.5rem;">
+                            <div class="form-group row">
+                                <label for="nama" class="col-md-4 col-form-label text-md-right">Nama</label>
 
-                        <div class="form-group row">
-                            <label for="nama" class="col-md-4 col-form-label text-md-right">{{ __('Nama') }}</label>
+                                <div class="col-md-6">
+                                    <input id="nama" type="text"
+                                        class="form-control @error('nama') is-invalid @enderror" name="nama"
+                                        value="{{ old('nama', Auth::user()->nama) }}" autocomplete="nama" autofocus>
 
-                            <div class="col-md-6">
-                                <input id="nama" type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" value="{{ old('nama', $user->nama) }}" autocomplete="nama" autofocus>
-
-                                @error('nama')
+                                    @error('nama')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
+                                    @enderror
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group row">
-                            <label for="nik" class="col-md-4 col-form-label text-md-right">{{ __('NIK') }}</label>
+                            <div class="form-group row">
+                                <label for="nik" class="col-md-4 col-form-label text-md-right">NIK</label>
 
-                            <div class="col-md-6">
-                                <input id="nik" type="text" class="form-control @error('nik') is-invalid @enderror" name="nik" value="{{ old('nik', $user->nik) }}" autocomplete="nik" autofocus>
+                                <div class="col-md-6">
+                                    <input id="nik" type="text" class="form-control @error('nik') is-invalid @enderror"
+                                        name="nik" value="{{ old('nik', Auth::user()->nik) }}" autocomplete="nik"
+                                        autofocus>
 
-                                @error('nik')
+                                    @error('nik')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
+                                    @enderror
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group row">
-                            <label for="tanggallahir" class="col-md-4 col-form-label text-md-right">{{ __('Tanggal Lahir') }}</label>
+                            <div class="form-group row">
+                                <label for="tanggallahir" class="col-md-4 col-form-label text-md-right">Tanggal
+                                    Lahir</label>
 
-                            <div class="col-md-6">
-                                <input id="tanggallahir" type="date" class="form-control @error('date') is-invalid @enderror" name="tanggallahir" value="{{ old('tanggallahir', $user->tanggallahir) }}" autocomplete="date">
+                                <div class="col-md-6">
+                                    <input id="tanggallahir" type="date"
+                                        class="form-control @error('date') is-invalid @enderror" name="tanggallahir"
+                                        value="{{ old('tanggallahir', Auth::user()->tanggallahir) }}"
+                                        autocomplete="date">
 
-                                @error('date')
+                                    @error('date')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
+                                    @enderror
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group row">
-                            <label for="nohp" class="col-md-4 col-form-label text-md-right">{{ __('Nomor HP') }}</label>
+                            <div class="form-group row">
+                                <label for="nohp" class="col-md-4 col-form-label text-md-right">Nomor HP</label>
 
-                            <div class="col-md-6">
-                                <input id="nohp" type="text" class="form-control @error('nohp') is-invalid @enderror" name="nohp" value="{{ old('nohp', $user->nohp) }}" autocomplete="nohp" autofocus>
+                                <div class="col-md-6">
+                                    <input id="nohp" type="text"
+                                        class="form-control @error('nohp') is-invalid @enderror" name="nohp"
+                                        value="{{ old('nohp', Auth::user()->nohp) }}" autocomplete="nohp" autofocus>
 
-                                @error('nohp')
+                                    @error('nohp')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
+                                    @enderror
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>
+                            <div class="form-group row">
+                                <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail</label>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email', $user->email) }}" autocomplete="email">
+                                <div class="col-md-6">
+                                    <input id="email" type="email"
+                                        class="form-control @error('email') is-invalid @enderror" name="email"
+                                        value="{{ old('email', Auth::user()->email) }}" autocomplete="email">
 
-                                @error('email')
+                                    @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
+                                    @enderror
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Masukkan Foto') }}</label>
-
-                            <input name="image" type="file" class="form-control-file" id="image">
-
-                            <img alt="image" src="{{ asset('assets/images/' . $user->image) }}" class="img-fluid"
-                                style="width: 200px; margin-top: 1rem;">
-
-                            <p class="text-danger">{{ $errors->first("image") }}</p>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Update Profile
-                                </button>
+                            
+                            <div class="form-group row mb-0">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        Update Profile
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-    
+
 
 
 </body>
