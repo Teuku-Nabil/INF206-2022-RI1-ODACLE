@@ -1,9 +1,6 @@
 <?php
 
-
-
 use Illuminate\Support\Facades\Route;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -30,13 +27,17 @@ Route::post('/daftar', [App\Http\Controllers\RegisterController::class, 'simpan'
 Route::group(['middleware' => ['auth', 'ceklevel:pasien']], function () {
     Route::get('/beranda', [App\Http\Controllers\BerandaController::class, 'index']);
     Route::get('/logout', [App\Http\Controllers\LoginController::class, 'logoutpasien']);
+    Route::get('/profil', [App\Http\Controllers\ProfileController::class, 'index'])->name('profil.index');
+    Route::get('/updateprofil', [App\Http\Controllers\ProfileController::class, 'edit']);
+    Route::patch('/profil', [App\Http\Controllers\ProfileController::class, 'update'])->name('profil.update');
+    Route::get('/updatefoto', [App\Http\Controllers\ProfileController::class, 'foto']);
+    Route::post('/profil', [App\Http\Controllers\ProfileController::class, 'upload'])->name('foto.upload');
 });
 
 Route::group(['middleware' => ['auth', 'ceklevel:dokter']], function () {
     Route::get('/beranda-dokter', [App\Http\Controllers\BerandaController::class, 'berandadokter']);
     Route::get('/logout-dokter', [App\Http\Controllers\LoginController::class, 'logoutdokter']);
 });
-
 
 Route::get('/bg', function () {
     return view('template/background');
@@ -46,10 +47,6 @@ Route::get('/bg', function () {
 // dokter
 Route::get('/jadwal-saya', function () {
     return view('dokter/jadwal-saya');
-});
-
-Route::get('/profil', function () {
-    return view('aktor');
 });
 
 Route::get('/antrian', function () {
