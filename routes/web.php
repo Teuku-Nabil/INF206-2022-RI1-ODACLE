@@ -56,4 +56,11 @@ Route::get('/antrian', function () {
     return view('user/antrian');
 });
 
+Route::get('/jadwalpasien', function () {
+    return view('dokter/jadwalpasien');
+});
+
+Route::get('/konsultasiulang', function () {
+    return view('dokter/konsultasiulang');
+});
 
