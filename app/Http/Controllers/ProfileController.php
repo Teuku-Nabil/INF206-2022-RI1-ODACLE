@@ -13,6 +13,11 @@ class ProfileController extends Controller
         return view('user.profil');
     }
 
+    public function profildokter()
+    {
+        return view('dokter.profil');
+    }
+
     public function update(Request $request)
     {
         $user = Auth::user();
@@ -28,6 +33,21 @@ class ProfileController extends Controller
         return redirect()->route('profil.index');
     }
 
+    public function updatedokter(Request $request)
+    {
+        $user = Auth::user();
+        $this->validate($request, [
+            "nama" => "required|string|max:255",
+            "nik" => "required",
+            "tanggallahir" => "required",
+            "nohp" => "required",
+            "email" => "required|string|email|max:255|unique:users,email,".$user->id
+        ]);
+        $user->update($request->all());
+        Session::flash('flash_message', 'Profil berhasil diupdate.');
+        return redirect()->route('profil.dokter');
+    }
+
     public function edit(Request $request)
     {
         return view('user.updateprofil', [
@@ -35,9 +55,21 @@ class ProfileController extends Controller
         ]);
     }
 
+    public function ubah(Request $request)
+    {
+        return view('dokter.updateprofil', [
+            'user' => $request->user()
+        ]);
+    }
+
     public function foto()
     {
         return view('user.foto');
+    }
+    
+    public function fotodokter()
+    {
+        return view('dokter.foto');
     }
 
     public function upload(Request $request)
@@ -48,6 +80,18 @@ class ProfileController extends Controller
             Auth()->user()->update(['image'=>$filename]);
             
             return redirect()->route('profil.index');
+        }
+        return redirect()->back();
+    }
+    
+    public function uploaddokter(Request $request)
+    {
+        if($request->hasFile('image')){
+            $filename = $request->image->getClientOriginalName();
+            $request->image->move(public_path('assets/profildokter/'), $filename);
+            Auth()->user()->update(['image'=>$filename]);
+            
+            return redirect()->route('profil.dokter');
         }
         return redirect()->back();
     }
