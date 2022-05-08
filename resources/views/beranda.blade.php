@@ -49,8 +49,7 @@
                 <div class="position-relative">
                     <div class="position-absolute top-0 end-10">
                         <a href="profil">
-                        <img src="{{ asset('assets/images/' .Auth::user()->image) }}" class="image rounded-circle" type="button" alt="user" 
-                        style="width: 80px;height: 80px; padding: 10px; margin: 0px;">
+                        <img src="{{ asset('assets/images/' .Auth::user()->image) }}" type="button" alt="user" height="60px">
                         </a>
                     </div>
                 </div>
