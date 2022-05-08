@@ -43,21 +43,11 @@
                     </div>
                     <div class="form-group">
                         <label>Tanggal Lahir</label>
-                        <input type="date" name="tanggal-lahir" class="form-control @error('tanggal-lahir') is-invalid @enderror" placeholder="Masukkan Tanggal Lahir" required>
-                        @error('tanggal-lahir')
-                        <div class="invalid-feedback">
-                            {{ $message  }}
-                        </div>
-                        @enderror
+                        <input type="date" name="tanggallahir" class="form-control" placeholder="Masukkan Tanggal Lahir">
                     </div>
                     <div class="form-group">
                         <label>No HP </label>
-                        <input type="textarea" name="no-hp" class="form-control @error('no-hp') is-invalid @enderror" placeholder="Masukkan No HP" required>
-                        @error('no-hp')
-                        <div class="invalid-feedback">
-                            {{ $message  }}
-                        </div>
-                        @enderror
+                        <input type="textarea" name="nohp" class="form-control" placeholder="Masukkan No HP">
                     </div>
                     <div class="form-group">
                         <label>Email </label>
