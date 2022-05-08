@@ -43,7 +43,7 @@
                 <td>Sabtu</td>
                 <td>29 Maret 2022</td>
                 <td> 
-                    <a href='' class='btn-danger'>Konsultasi</a>
+                    <a href='konsultasiulang' class='btn-danger'>Konsultasi</a>
                     <a href='' class='btn-primary'>Selesai</a> 
                 </td>
             </tr>
