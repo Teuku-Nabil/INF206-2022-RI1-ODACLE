@@ -16,7 +16,6 @@
             <h1>MASUK</h1>
             <form>
                 <div class="form-group">
-                    <h3>Username</h3>
                     <input type="text" name="Username" class="form-control" placeholder="Masukkan Username">
                 </div>
                 <div class="form-group">

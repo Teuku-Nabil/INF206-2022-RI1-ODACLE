@@ -50,3 +50,14 @@ Route::get('/profil', function () {
     return view('aktor');
 });
 
+Route::get('/antrian', function () {
+    return view('user/antrian');
+});
+
+Route::get('/pilih-spesialis', function () {
+    return view('user/pilih-spesialis');
+});
+
+Route::get('/data-dokter', function () {
+    return view('dokter/data-dokter');
+});

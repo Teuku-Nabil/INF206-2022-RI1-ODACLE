@@ -25,38 +25,65 @@
                 <form>
                     <div class="form-group">
                         <label>Nama</label>
-                        <input type="textarea" name="nama" class="form-control" placeholder="Masukkan Nama">
+                        <input type="textarea" name="nama" class="form-control @error('nama') is-invalid @enderror" placeholder="Masukkan Nama" required>
+                        @error('nama')
+                        <div class="invalid-feedback">
+                            {{ $message  }}
+                        </div>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label>NIK</label>
-                        <input type="textarea" name="nik" class="form-control" placeholder="Masukkan NIK">
+                        <input type="textarea" name="nik" class="form-control @error('nik') is-invalid @enderror" placeholder="Masukkan NIK" required>
+                        @error('nik')
+                        <div class="invalid-feedback">
+                            {{ $message  }}
+                        </div>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label>Tanggal Lahir</label>
-                        <input type="date" name="tanggal-lahir" class="form-control" placeholder="Masukkan Tanggal Lahir">
+                        <input type="date" name="tanggal-lahir" class="form-control @error('tanggal-lahir') is-invalid @enderror" placeholder="Masukkan Tanggal Lahir" required>
+                        @error('tanggal-lahir')
+                        <div class="invalid-feedback">
+                            {{ $message  }}
+                        </div>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label>No HP </label>
-                        <input type="textarea" name="no-hp" class="form-control" placeholder="Masukkan No HP">
+                        <input type="textarea" name="no-hp" class="form-control @error('no-hp') is-invalid @enderror" placeholder="Masukkan No HP" required>
+                        @error('no-hp')
+                        <div class="invalid-feedback">
+                            {{ $message  }}
+                        </div>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label>Email </label>
-                        <input type="email" name="email" class="form-control" placeholder="email@example.com">
+                        <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="email@example.com" required>
+                        @error('email')
+                        <div class="invalid-feedback">
+                            {{ $message  }}
+                        </div>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label>Password </label>
-                        <input type="password" name="password" class="form-control" placeholder="Masukkan Password">
+                        <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="Masukkan Password" required>
+                        @error('password')
+                        <div class="invalid-feedback">
+                            {{ $message  }}
+                        </div>
+                        @enderror
                     </div>
                     
-                    <center><button type="submit" class="registerbtn" >Selanjutnya</button></center>
+                    <center><button type="submit" class="registerbtn">Selanjutnya</button></center>
 
                     <div class="container-signin" style="text-align: center">
                         <p>Already have an account? <a href="login">Sign in</a>.</p>
                     </div>
                 </form>
-
-                
-
         </form>
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

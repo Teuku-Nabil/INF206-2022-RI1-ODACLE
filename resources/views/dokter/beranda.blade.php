@@ -27,10 +27,15 @@
                         </a>
                     </div>
                 </nav>
-                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                {{-- logo user
+                <div class="position-relative">
+                    <div class="position-absolute top-0 end-0">
+                        <img src="assets/images/user.png" alt="user" height="60px">
+                    </div>
+                </div> --}}
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -49,7 +54,7 @@
                 <div class="position-relative">
                     <div class="position-absolute top-0 end-10">
                         <a href="profil">
-                        <img src="assets/images/user.png" type="button" alt="user" height="60px">
+                            <img src="assets/images/user.png" type="button" alt="user" height="60px">
                         </a>
                     </div>
                 </div>
