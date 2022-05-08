@@ -57,3 +57,7 @@ Route::get('/antrian', function () {
 Route::get('/pilih-spesialis', function () {
     return view('user/pilih-spesialis');
 });
+
+Route::get('/data-dokter', function () {
+    return view('dokter/data-dokter');
+});

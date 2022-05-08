@@ -12,10 +12,12 @@
 
 <body>
     @if(session()->has('status'))
-    <script>
-        alert('{{ session()->get('status') }}');
-    </script>
-    @endif
+    {{-- pesan berhasil daftar --}}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ session('status') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    @endif 
     <div class="login-form">
         <div class=login-half>
             <h1>MASUK</h1>
