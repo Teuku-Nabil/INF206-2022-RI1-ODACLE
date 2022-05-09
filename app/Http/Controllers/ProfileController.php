@@ -84,7 +84,6 @@ class ProfileController extends Controller
         return redirect()->back();
     }
 
-
     public function uploaddokter(Request $request)
     {
         if ($request->hasFile('image')) {
