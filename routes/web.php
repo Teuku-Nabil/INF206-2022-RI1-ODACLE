@@ -35,6 +35,11 @@ Route::group(['middleware' => ['auth', 'ceklevel:pasien']], function () {
 Route::group(['middleware' => ['auth', 'ceklevel:dokter']], function () {
     Route::get('/beranda-dokter', [App\Http\Controllers\BerandaController::class, 'berandadokter']);
     Route::get('/logout-dokter', [App\Http\Controllers\LoginController::class, 'logoutdokter']);
+    Route::get('/profil-dokter', [App\Http\Controllers\ProfileController::class, 'profildokter'])->name('profil.dokter');
+    Route::get('/updateprofil-dokter', [App\Http\Controllers\ProfileController::class, 'ubah']);
+    Route::patch('/profil-dokter', [App\Http\Controllers\ProfileController::class, 'updatedokter'])->name('profil.updatedokter');
+    Route::get('/updatefoto-dokter', [App\Http\Controllers\ProfileController::class, 'fotodokter']);
+    Route::post('/profil-dokter', [App\Http\Controllers\ProfileController::class, 'uploaddokter'])->name('fotodokter.upload');
 });
 
 
