@@ -41,7 +41,7 @@ class ProfileController extends Controller
             "nik" => "required",
             "tanggallahir" => "required",
             "nohp" => "required",
-            "email" => "required|string|email|max:255|unique:users,email,".$user->id
+            "email" => "required|string|email|max:255|unique:users,email," . $user->id
         ]);
         $user->update($request->all());
         Session::flash('flash_message', 'Profil berhasil diupdate.');
@@ -66,7 +66,7 @@ class ProfileController extends Controller
     {
         return view('user.foto');
     }
-    
+
     public function fotodokter()
     {
         return view('dokter.foto');
@@ -83,20 +83,17 @@ class ProfileController extends Controller
         }
         return redirect()->back();
     }
-<<<<<<< HEAD
-}
-=======
-    
+
+
     public function uploaddokter(Request $request)
     {
-        if($request->hasFile('image')){
+        if ($request->hasFile('image')) {
             $filename = $request->image->getClientOriginalName();
             $request->image->move(public_path('assets/profildokter/'), $filename);
-            Auth()->user()->update(['image'=>$filename]);
-            
+            Auth()->user()->update(['image' => $filename]);
+
             return redirect()->route('profil.dokter');
         }
         return redirect()->back();
     }
 }
->>>>>>> a64fe3f025ebaba62df46539c09d9ff09c20b8b7
