@@ -34,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Riwayat Praktik</a>
+                            <a class="nav-link active" aria-current="page" href="#">Riwayat Praktik</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Konsultasi Lanjutan</a>
@@ -45,11 +45,11 @@
                     </ul>
                 </div>
 
-                <h1 class="nama-profil">{{Auth::user()->nama}}</h1>
+                <h1 class="nama-profil">Om-Om</h1>
                 <div class="position-relative">
                     <div class="position-absolute top-0 end-10">
                         <a href="profil">
-                        <img src="{{ asset('assets/images/' .Auth::user()->image) }}" type="button" alt="user" height="60px">
+                        <img src="assets/images/user.png" type="button" alt="user" height="60px">
                         </a>
                     </div>
                 </div>

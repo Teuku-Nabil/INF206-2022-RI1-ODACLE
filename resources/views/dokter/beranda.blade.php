@@ -50,7 +50,7 @@
                     </ul>
                 </div>
 
-                <h1 class="nama-profil">{{Auth::user()->nama}}</h1>
+                <h1 class="nama-profil">Om-Om</h1>
                 <div class="position-relative">
                     <div class="position-absolute top-0 end-10">
                         <a href="profil">
