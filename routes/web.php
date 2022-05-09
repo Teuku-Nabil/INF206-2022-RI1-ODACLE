@@ -71,5 +71,5 @@ Route::get('/riwayat-praktik', function () {
 });
 
 Route::get('/beranda', function () {
-    return view('beranda');
+    return view('dokter/beranda');
 });

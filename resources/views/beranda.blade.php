@@ -82,7 +82,7 @@
                     <p>Spesialis apa</p>
                     <p>08.00-21.00</p>
                 </div>
-                <a href="#" class="btn">Daftar</a>
+                <a href="#" class="btn" style="color: black; background-color:white">Daftar</a>
             </div>
         </div>
 
