@@ -34,7 +34,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Riwayat Praktik</a>
+                            <a class="nav-link active" aria-current="page" href="beranda">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Riwayat Praktik</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Konsultasi Lanjutan</a>
