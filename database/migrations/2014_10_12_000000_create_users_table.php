@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('nik');
             $table->date('tanggallahir');
             $table->string('nohp');
-            $table->string('level');
+            $table->string('level')->default('pasien');
             $table->string('email')->unique();
             $table->string('image');
             $table->string('password');

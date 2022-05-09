@@ -43,8 +43,8 @@
                     </div>
                     <div class="form-group">
                         <label>Tanggal Lahir</label>
-                        <input type="date" name="tanggal-lahir" class="form-control @error('tanggal-lahir') is-invalid @enderror" placeholder="Masukkan Tanggal Lahir" required>
-                        @error('tanggal-lahir')
+                        <input type="date" name="tanggallahir" class="form-control @error('tanggallahir') is-invalid @enderror" placeholder="Masukkan Tanggal Lahir" required>
+                        @error('tanggallahir')
                         <div class="invalid-feedback">
                             {{ $message  }}
                         </div>
@@ -52,8 +52,8 @@
                     </div>
                     <div class="form-group">
                         <label>No HP </label>
-                        <input type="textarea" name="no-hp" class="form-control @error('no-hp') is-invalid @enderror" placeholder="Masukkan No HP" required>
-                        @error('no-hp')
+                        <input type="textarea" name="nohp" class="form-control @error('nohp') is-invalid @enderror" placeholder="Masukkan No HP" required>
+                        @error('nohp')
                         <div class="invalid-feedback">
                             {{ $message  }}
                         </div>
