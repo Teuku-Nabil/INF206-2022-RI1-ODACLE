@@ -48,7 +48,7 @@
                     </ul>
                 </div>
 
-                <h1 class="nama-profil">Om-Om</h1>
+                <h1 class="nama-profil">{{Auth::user()->nama}}</h1>
                 <div class="position-relative">
                     <div class="position-absolute top-0 end-10">
                         <a href="profil">
@@ -65,7 +65,7 @@
         <div class="top-wrapper">
             <div class="container">
                 <h1>WELCOME TO ODACLE</h1>
-                <p>your healt is our priority</p>
+                <p>your health is our priority</p>
                 <div class="btn-wrapper">
                     <a href="#" class="btn">Buat Janji Dokter</a>
                     <a href="#" class="btn">Ajukan Konsultasi Lanjutan</a>
