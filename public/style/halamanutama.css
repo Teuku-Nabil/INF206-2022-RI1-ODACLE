@@ -20,6 +20,7 @@ body {
     color: white;
     padding-top: 20px;
     padding-right: 20px;
+    padding-left: 900px;
 }
 
 .container img{
@@ -32,7 +33,7 @@ body {
 }
   
 .top-wrapper {
-    padding: 180px 0 100px 0;
+    padding: 70px 0 100px 0;
     background-image: url("https://jejakpiknik.com/wp-content/uploads/2020/08/dokter-gigi-di-medan-yang-menerima-inhealth.jpg");
     background-size: cover;
     color: white;
@@ -83,12 +84,12 @@ body {
 }
   
 .require {
-    margin-top: 100px;
-    height: 700px;
+    margin-top: 1000px;
+    height: 500px;
 }
 
 .require {
-    margin-top: 250px;
+    margin-top: 100px;
 }
 
 .feature {
@@ -116,8 +117,8 @@ body {
     padding: 15px 20px;
     border-radius: 15px;
     position: absolute;
-    left: 1100px;
-    bottom: -50px;
+    left: 900px;
+    bottom: -170px;
 }
 
 .jadwal-dokter {
@@ -127,6 +128,33 @@ body {
 }
 
 .jadwal-dokter p{
-    font-size: 15px;
+    font-size: 20px;
     color: black;
+}
+
+.card-tentangkami {
+    font-size: 25px;
+    z-index:-1;
+    background-color: #7ab9c7;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.card1 {
+    background-color: #b1d3db;
+    margin-top: 100px;
+    margin-left: 140px;
+    margin-bottom: 300px;
+}
+
+.card2 {
+    background-color: #469CAF;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+.card3 {
+    background-color: #b1d3db;
+    margin-top: 100px;
+    margin-bottom: 300px;
 }

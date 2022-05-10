@@ -28,26 +28,6 @@
                     </div>
                 </nav>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="beranda">Beranda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Riwayat Praktik</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Konsultasi Lanjutan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="logout">logout</a>
-                        </li>
-                    </ul>
-                </div>
-
                 <h1 class="nama-profil">Masuk</h1>
                 <div class="position-relative">
                     <div class="position-absolute top-0 end-10">
@@ -65,13 +45,12 @@
                 <h1>WELCOME TO ODACLE</h1>
                 <p>your healt is our priority</p>
                 <div class="btn-wrapper">
-                    <a href="#" class="btn">Buat Janji Dokter</a>
-                    <a href="#" class="btn">Ajukan Konsultasi Lanjutan</a>
+                    <a href="#" class="btn">Daftar Praktik</a>
                 </div>
             </div>
             <div class="jadwal-hari-ini">
                 <h4><strong>Jadwal Praktik<br>Hari ini</strong></h4>
-                <h5>tanggal sekarang 25 maret 2022</h5>
+                <h5>Tanggal: selasa/25 maret 2022</h5>
                 <div class="jadwal-dokter">
                     <p>Drg.Nama dokter</p>
                     <p>Spesialis apa</p>
@@ -86,37 +65,51 @@
             </div>
         </div>
 
-        {{-- fitur2 rumah sakit --}}
-        <div class="require">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="feature col-md-3" style="background-color: #257F92">
-                        <img class="fea-img" src="assets/features/dokter kami.png" alt="dokter kami">
-                        <div class="fea-text">
-                            <h4>Dokter Kami</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloribus architecto nihil tempora placeat. Doloribus, iure soluta cumque quia sunt pariatur labore natus quos repellat animi eius obcaecati? Mollitia, placeat.</p>
-                        </div>
-                    </div>
-                    <div class="feature col-md-3" style="background-color: #469CAF">
-                        <img class="fea-img" src="assets/features/fasilitas.png" alt="pelayanan">
-                        <div class="fea-text">
-                            <h4>Layanan</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quidem quas molestias, maxime veritatis dolorem pariatur sequi, est fuga earum voluptatum doloribus laboriosam dignissimos illum error aspernatur facilis veniam neque.</p>
-                        </div>
-                    </div>
-                    <div class="feature col-md-3" style="background-color: #257F92">
-                        <img class="fea-img" src="assets/features/suntik.png" alt="perawatan">
-                        <div class="fea-text">
-                            <h4>Perawatan</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi vero ipsa earum qui commodi incidunt deleniti soluta asperiores ipsam doloremque. Aperiam ab omnis, facere commodi dolor et placeat vel unde.</p>
-                        </div>
-                    </div>
-                </div>
+        {{-- tengtang kami/biografi --}}
+        <div class="card-tentangkami">
+            <div class="card-header">
+                 Tentang Kami
+                     </div>
+                        <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                        <p>Odacle adalah klinik gigi dan mulut pertama di indoneia yang layanan informasi nya full <br> menggunakan sistem informasi berbasis WEB atau aplikasi. Odacle selalu update dalam memberi <br> informasi mengenai klinik yang terbaru, maupun jadwal dokter yang selalu di update. Odacle sendiri <br> tidak menerima pasien yang daftar di tempat. Odacle hanya menerima pasien yang sudah melakukan pendaftaran pada website atau aplikasi yang sudah disediakan.</p>
+                        <p>Odacle memiliki banyak dokter spesialis yang handal pada bidangnya sehingga kesehatan gigi anda terjamin saat melakukan perwatan pada klinik kami. Di klinik Odacle anda bisa melakukan perawatan gigi setiap minggunya dengan mengambil jam yang telah disediakan. anda juga bisa melakukan konsultasi melalui website atau aplikasi yang telah disediakan.</p>
             </div>
         </div>
 
-        
 
+        {{-- akhir biografi --}}
+
+        {{-- fitur2 rumah sakit --}}
+        <div class="row">
+        <div class="card1 col-sm-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Emergency Case</h5>
+                 <p class="card-text"> <br> untuk informasi emergensi silahkan menghubungi nomor telepon yang tertera di bawah. nomor tersebut dikhususkan bagi pasien yang membutuhkan pertolongan tercepat dari kami. <br><br> (021) 997665 4332 </p>
+            </div>
+        </div>
+        <div class="card2 col-sm-3" style="width: 30rem;">
+                <div class="card-body">
+                      <h5 class="card-title">Dokter jaga</h5>
+                        <p> hari ini : selasa/25-maret-2022</p>
+                        <p> drg. Yanti, SpKG. --------------------------------- 10.00-18.00</p>
+                        <p> drg. Nabil, SpPros. ------------------------------- 15.00-21.00</p>
+                        <p> drg. Putri, SpPerio. ------------------------------- 18.00-21.00</p>
+                    </div>
+                </div>
+        <div class="card3 col-sm-3" style="width: 18rem;">
+        <div class="card-body">
+                <h5 class="card-title">Jam Poliklinik</h5>
+                 <p class="card-text"> senin  ---------------- 08.00-21.00 </p>
+                 <p>selasa  --------------- 08.00-21.00</p>
+                 <p>Rabu  ---------------- 08.00-21.00</p>
+                 <p>Kamis  --------------- 08.00-21.00</p>
+                 <p>Jumat  --------------- 08.00-21.00</p>
+                 <p>Sabtu  --------------- 08.00-21.00</p>
+                 <p>Minggu  ------------- 08.00-21.00</p>
+            </div>
+        </div>
+</div>
         {{-- akhir navbar --}}
 
 
