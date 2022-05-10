@@ -34,7 +34,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Riwayat Praktik</a>
+                            <a class="nav-link active" aria-current="page" href="beranda">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Riwayat Praktik</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Konsultasi Lanjutan</a>
@@ -45,30 +48,76 @@
                     </ul>
                 </div>
 
-                <h1 class="nama-profil">{{Auth::user()->nama}}</h1>
+                <h1 class="nama-profil">Om-Om</h1>
                 <div class="position-relative">
                     <div class="position-absolute top-0 end-10">
                         <a href="profil">
-                        <img src="{{ asset('assets/images/' .Auth::user()->image) }}" class="image rounded-circle" type="button" alt="user" 
-                        style="width: 80px;height: 80px; padding: 10px; margin: 0px;">
+                        <img src="{{ asset('assets/images/' . Auth::user()->image) }}"
+                            class="image rounded-circle" type="button" alt="user"
+                            style="width: 80px; height: 80px; padding: 10px; margin: 0px;">
                         </a>
                     </div>
                 </div>
             </div>
         </nav>
 
-        {{-- garis navbar --}}
-        <img src="assets/images/garis.png" alt="garis" width="1600px">
+        {{-- jumbotron --}}
+        <div class="top-wrapper">
+            <div class="container">
+                <h1>WELCOME TO ODACLE</h1>
+                <p>your healt is our priority</p>
+                <div class="btn-wrapper">
+                    <a href="#" class="btn">Buat Janji Dokter</a>
+                    <a href="#" class="btn">Ajukan Konsultasi Lanjutan</a>
+                </div>
+            </div>
+            <div class="jadwal-hari-ini">
+                <h4><strong>Jadwal Praktik Hari ini</strong></h4>
+                <h5>{{ date('Y-m-d') }}</h5>
+                <div class="jadwal-dokter">
+                    <p>Drg.Nama dokter</p>
+                    <p>Spesialis apa</p>
+                    <p>08.00-21.00</p>
+                </div>
+                <div class="jadwal-dokter">
+                    <p>Drg.Nama dokter</p>
+                    <p>Spesialis apa</p>
+                    <p>08.00-21.00</p>
+                </div>
+                <a href="#" class="btn" style="color: black; background-color:white">Daftar</a>
+            </div>
+        </div>
 
-        {{-- gambar beranda --}}
-        <img src="assets/images/beranda-pasien.png" alt="beranda" width="1600px" height="200px">
-        <b> WELCOME TO ODACLE
-            <br>your health is our priority
-        </b>
+        {{-- fitur2 rumah sakit --}}
+        <div class="require">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="feature col-md-3" style="background-color: #257F92">
+                        <img class="fea-img" src="assets/features/dokter kami.png" alt="dokter kami">
+                        <div class="fea-text">
+                            <h4>Dokter Kami</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloribus architecto nihil tempora placeat. Doloribus, iure soluta cumque quia sunt pariatur labore natus quos repellat animi eius obcaecati? Mollitia, placeat.</p>
+                        </div>
+                    </div>
+                    <div class="feature col-md-3" style="background-color: #469CAF">
+                        <img class="fea-img" src="assets/features/fasilitas.png" alt="pelayanan">
+                        <div class="fea-text">
+                            <h4>Layanan</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quidem quas molestias, maxime veritatis dolorem pariatur sequi, est fuga earum voluptatum doloribus laboriosam dignissimos illum error aspernatur facilis veniam neque.</p>
+                        </div>
+                    </div>
+                    <div class="feature col-md-3" style="background-color: #257F92">
+                        <img class="fea-img" src="assets/features/suntik.png" alt="perawatan">
+                        <div class="fea-text">
+                            <h4>Perawatan</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi vero ipsa earum qui commodi incidunt deleniti soluta asperiores ipsam doloremque. Aperiam ab omnis, facere commodi dolor et placeat vel unde.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-        {{-- img user --}}
-
+        
 
         {{-- akhir navbar --}}
 
