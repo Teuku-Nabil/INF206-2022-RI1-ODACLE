@@ -12,8 +12,9 @@
         <!-- custom CSS -->
         <link rel="stylesheet" href="style/halamanawal.css">
         <link rel="stylesheet" href="style/user/antrian.css">
+        <link rel="shortcut icon" href="assets/icon/blue.png" type="image/x-icon">
 
-        <title>antrian</title>
+        <title>Antrian</title>
     </head>
     <body>
 
@@ -22,7 +23,7 @@
                 <div class="content-antrian">
                     <div class="content-grup">
                         <label class="Nama" for="Jadwal" style="font-size: 20px"><strong>Nama</strong></label>
-                        <p>xxx</p>
+                        <p>{{Auth::user()->nama}}</p>
                     </div>
                     <div class="content-grup">
                         <label class="label-antrian" for="Jadwal" style="font-size: 20px"><strong>Jadwal</strong></label>
