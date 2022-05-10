@@ -34,7 +34,7 @@
         </div>
 
         <div class="data-dokter">
-            <img class="img-dokter" src="assets/images/beranda-pasien.png" alt="dokter">
+            <img class="img-dokter" src="assets/images/dokter.png" alt="dokter">
             <div class="data-rinci">
                 <h4><span>Drg.Nabil,SpKG</span></h4>
                 <ul>

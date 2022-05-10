@@ -34,6 +34,7 @@ section {
     border: 1px solid;
     padding: 10px 25px;
     text-align: center;
+    color: #5b9aa8;
     box-shadow: 5px 10px 8px 10px #888888;
 }
 
@@ -43,4 +44,11 @@ section {
     border: 1px solid;
     padding: 12px 20px;
     margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    list-style-type: none;
 }
