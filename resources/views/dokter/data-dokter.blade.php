@@ -11,8 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style/halamanawal.css">
-    <link rel="stylesheet" href="style/user/data-dokter.css">
+    <!-- <link rel="stylesheet" href="style/halamanawal.css"> -->
+    <link rel="stylesheet" href="style/data-dokter.css">
     <link rel="shortcut icon" href="assets/icon/blue.png" type="image/x-icon">
 
     <title>ODACLE</title>
@@ -20,16 +20,26 @@
 
 <body>
     <section>
-        <h1>Nama Spesialisnya pokoknnya</h1> {{-- tinggal tambah nama aja dari controllernya --}}
+        <h1>Spesialis Konservasi Gigi</h1> {{-- tinggal tambah nama aja dari controllernya --}}
         {{-- bagian sini pake looping aja --}}
         <div class="data-dokter">
-            <img class="img-dokter" src="assets/image/dokter.png" alt="dokter">
+            <img class="img-dokter rounded-circle" src="assets/images/dokter.png" alt="dokter">
             <div class="data-rinci">
-                <h4><span>Nama Dokternya</span></h4>
+                <h4><span>Drg.Yanti,SpKG</span></h4>
                 <ul>
-                    <li>hari, tanggal</li>
-                    <li>hari, tanggal</li>
-                    <li>hari, tanggal</li>
+                    <li><a href="#" class="btn">Senin   08.00 - 12.00</a></li>
+                    <li><a href="#" class="btn">Senin   08.00 - 12.00</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="data-dokter">
+            <img class="img-dokter rounded-circle" src="assets/images/dokter.png" alt="dokter">
+            <div class="data-rinci">
+                <h4><span>Drg.Yanti,SpKG</span></h4>
+                <ul>
+                    <li><a href="#" class="btn">Senin   08.00 - 12.00</a></li>
+                    <li><a href="#" class="btn">Senin   08.00 - 12.00</a></li>
                 </ul>
             </div>
         </div>
