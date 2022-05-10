@@ -31,7 +31,7 @@ class LoginController extends Controller
             $request->session()->regenerate();
             return redirect()->intended('/beranda-dokter');
         }
-        return back()->with('error', 'Email atau Password salah');
+        return back()->with('error', 'Email atau Password Salah!');
     }
 
     public function logoutpasien()
