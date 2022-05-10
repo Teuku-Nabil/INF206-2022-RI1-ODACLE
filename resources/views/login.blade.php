@@ -5,23 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> --}}
+
+
     <link rel="shortcut icon" href="assets/icon/blue.png" type="image/x-icon">
     <link rel="stylesheet" href="style/login.css">
     <title>Login</title>
 </head>
 
 <body>
-    @if(session()->has('status'))
-    <script>
-        alert('{{ session()->get('status') }}');
-    </script>
-    @endif
+    <div class="alert-mess position-relative">
+        @if(session()->has('status'))
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>{{ session('status') }}</strong>
+        </div>
+        @endif
+    </div>
     <div class="login-form">
         <div class=login-half>
             <h1>MASUK</h1>
             @if(session('error'))
             <script>
-            alert("{{ session('error') }}");
+                alert("{{ session('error') }}");
             </script>
             @endif
             <form action="/login" method="post">
