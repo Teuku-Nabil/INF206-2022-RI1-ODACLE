@@ -30,3 +30,7 @@ Route::get('/daftar', function () {
 Route::get('/halamandokter', function () {
     return view('halamandokter');
 });
+
+Route::get('/halamanutama', function () {
+    return view('halamanutama');
+});
