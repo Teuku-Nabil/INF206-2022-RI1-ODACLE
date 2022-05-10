@@ -9,23 +9,32 @@ section {
     padding: 10px 60px;
     margin: 100px 300px;
     text-align: center;
+    box-shadow: 5px 10px 8px 10px #888888;
 }
 
 .data-dokter {
     display: flex;
-    margin-top: 15px;
+    margin: 15px;
+    padding: 20px 20px;
 }
 
 .img-dokter {
+    border: 1px solid #0000;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 50px;
+    box-shadow: 5px 10px 8px 10px #888888;
 }
 
 .data-rinci {
     background-color: white;
     border-radius: 15px;
     border: 1px solid;
-    padding: 10px 10px;
-    margin-left: 200px;
+    padding: 10px 25px;
     text-align: center;
+    box-shadow: 5px 10px 8px 10px #888888;
 }
 
 .btn {

@@ -23,23 +23,23 @@
         <h1>Spesialis Konservasi Gigi</h1> {{-- tinggal tambah nama aja dari controllernya --}}
         {{-- bagian sini pake looping aja --}}
         <div class="data-dokter">
-            <img class="img-dokter rounded-circle" src="assets/images/dokter.png" alt="dokter">
+            <img class="img-dokter" src="assets/images/dokter.png" alt="dokter">
             <div class="data-rinci">
                 <h4><span>Drg.Yanti,SpKG</span></h4>
                 <ul>
-                    <li><a href="#" class="btn">Senin   08.00 - 12.00</a></li>
-                    <li><a href="#" class="btn">Senin   08.00 - 12.00</a></li>
+                    <li><a href="#" class="btn">Senin &ensp; 08.00 - 12.00</a></li>
+                    <li><a href="#" class="btn">Rabu &ensp;  14.00 - 18.00</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="data-dokter">
-            <img class="img-dokter rounded-circle" src="assets/images/dokter.png" alt="dokter">
+            <img class="img-dokter" src="assets/images/beranda-pasien.png" alt="dokter">
             <div class="data-rinci">
-                <h4><span>Drg.Yanti,SpKG</span></h4>
+                <h4><span>Drg.Nabil,SpKG</span></h4>
                 <ul>
-                    <li><a href="#" class="btn">Senin   08.00 - 12.00</a></li>
-                    <li><a href="#" class="btn">Senin   08.00 - 12.00</a></li>
+                    <li><a href="#" class="btn">Selasa&ensp; 14.00 - 18.00</a></li>
+                    <li><a href="#" class="btn">Jum'at&ensp; 14.00 - 18.00</a></li>
                 </ul>
             </div>
         </div>
