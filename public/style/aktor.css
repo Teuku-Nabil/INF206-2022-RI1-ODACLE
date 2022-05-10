@@ -10,6 +10,11 @@
 }
 
 .pilihan{
-    /* float: upper-left; */
+    float: upper-left;
     width: 50%;
+}
+
+.img-logo{
+    width: 100px;
+    height: 100px;
 }

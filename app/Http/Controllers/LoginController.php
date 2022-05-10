@@ -12,11 +12,11 @@ class LoginController extends Controller
     {
         if (Auth::check()) {
             return redirect('/beranda');
-        } else {
+        }else{
             return view('login');
         }
     }
-
+    
     public function actionlogin(Request $request)
     {
         $credentials = $request->validate([
@@ -27,13 +27,13 @@ class LoginController extends Controller
         if (Auth::Attempt($credentials) && $level = Auth::user()->level == 'pasien') {
             $request->session()->regenerate();
             return redirect()->intended('/beranda');
-        } elseif (Auth::Attempt($credentials) && $level = Auth::user()->level == 'dokter') {
+        }elseif (Auth::Attempt($credentials) && $level = Auth::user()->level == 'dokter') {
             $request->session()->regenerate();
             return redirect()->intended('/beranda-dokter');
         }
         return back()->with('error', 'Email atau Password salah');
     }
-
+    
     public function logoutpasien()
     {
         Auth::logout();
