@@ -34,3 +34,6 @@ Route::get('/halamandokter', function () {
 Route::get('/halamanutama', function () {
     return view('halamanutama');
 });
+Route::get('/jadwaldokter', function () {
+    return view('jadwaldokter');
+});
