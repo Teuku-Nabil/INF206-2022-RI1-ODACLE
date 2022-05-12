@@ -8,3 +8,9 @@ section {
 .img-dokter {
     
 }
+
+.data-dokter {
+    background-color: white;
+    /* position: static; */
+    text-align: center;
+}

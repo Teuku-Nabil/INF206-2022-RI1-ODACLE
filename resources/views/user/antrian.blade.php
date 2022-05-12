@@ -10,6 +10,7 @@
 
 
         <!-- custom CSS -->
+        <link rel="shortcut icon" href="assets/icon/blue.png" type="image/x-icon">
         <link rel="stylesheet" href="style/halamanawal.css">
         <link rel="stylesheet" href="style/user/antrian.css">
 

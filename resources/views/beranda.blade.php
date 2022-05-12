@@ -37,10 +37,10 @@
                             <a class="nav-link active" aria-current="page" href="beranda">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Riwayat Praktik</a>
+                            <a class="nav-link" aria-current="page" href="riwayat-praktik">Riwayat Praktik</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Konsultasi Lanjutan</a>
+                            <a class="nav-link" href="pilih-spesialis">Konsultasi Lanjutan</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="logout">logout</a>
@@ -65,8 +65,8 @@
                 <h1>WELCOME TO ODACLE</h1>
                 <p>your healt is our priority</p>
                 <div class="btn-wrapper">
-                    <a href="#" class="btn">Buat Janji Dokter</a>
-                    <a href="#" class="btn">Ajukan Konsultasi Lanjutan</a>
+                    <a href="pilih-spesialis" class="btn">Buat Janji Dokter</a>
+                    <a href="pilih-spesialis" class="btn">Ajukan Konsultasi Lanjutan</a>
                 </div>
             </div>
             <div class="jadwal-hari-ini">
