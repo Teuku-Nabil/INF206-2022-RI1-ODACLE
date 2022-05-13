@@ -73,3 +73,8 @@ Route::get('/riwayat-praktik', function () {
 Route::get('/beranda', function () {
     return view('dokter/beranda');
 });
+
+Route::get('/registrasi', function () {
+    return view('user/registrasi');
+});
+
