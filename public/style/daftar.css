@@ -1,15 +1,27 @@
 * {box-sizing: border-box}
 
-/* Add padding to containers */
+body{
+  background: rgba(0, 0, 0, .65) url('https://jejakpiknik.com/wp-content/uploads/2020/08/dokter-gigi-di-medan-yang-menerima-inhealth.jpg');
+  background-blend-mode: darken;
+  background-size: cover;
+}
+
 .container {
   padding: 16px;
-  background-color: white;
+  background-color: rgba(1, 255, 255, 0.3);
   border-radius: 15px;
+  transform: translate(0%, 0%);
 }
 
 .container h1 {
   font-size: 35px;
   text-align: center;
+  color:white;
+}
+
+label{
+  color:white;
+  font-weight: bold;
 }
 
 /* Full-width input fields */
@@ -35,19 +47,19 @@ hr {
 
 /* Set a style for the submit/register button */
 .registerbtn {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #00ffa2d3;
+  color: rgb(86, 81, 81);
   padding: 12px 20px;
   margin: 50px 0;
   border: none;
   cursor: pointer;
   width: 25%;
-  opacity: 0.9;
+  opacity: 100%;
   border-radius: 15px;
 }
 
 .registerbtn:hover {
-  opacity:1;
+  opacity:0.7;
 }
 
 /* Add a blue text color to links */
@@ -72,6 +84,13 @@ a {
   padding: 15px 15px;
 }
 
+.container-signin a{
+  color:white;
+}
+
+.container-signin a:hover{
+  color:red;
+}
 
 
 

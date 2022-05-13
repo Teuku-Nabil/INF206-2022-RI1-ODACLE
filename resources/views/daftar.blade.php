@@ -11,7 +11,6 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="assets/icon/blue.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/halamanawal.css">
     <link rel="stylesheet" href="style/daftar.css">
 
     <title>Daftar</title>
@@ -48,7 +47,7 @@
                         <input type="password" name="password" class="form-control" placeholder="Masukkan Password">
                     </div>
                     
-                    <center><button type="submit" class="registerbtn" >Selanjutnya</button></center>
+                    <center><button type="submit" class="registerbtn" ><strong>Selanjutnya</strong></button></center>
 
                     <div class="container-signin" style="text-align: center">
                         <p>Already have an account? <a href="login">Sign in</a>.</p>
