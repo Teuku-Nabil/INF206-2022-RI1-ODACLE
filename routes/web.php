@@ -44,12 +44,12 @@ Route::get('/', function () {
 //     Route::post('/profil-dokter', [App\Http\Controllers\ProfileController::class, 'uploaddokter'])->name('fotodokter.upload');
 // });
 
-Route::get('/bg', function () {
-    return view('template/background');
-});
+Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login');
+Route::post('/login', [App\Http\Controllers\LoginController::class, 'actionlogin']);
 
+Route::get('/daftar', [App\Http\Controllers\RegisterController::class, 'daftar']);
+Route::post('/daftar', [App\Http\Controllers\RegisterController::class, 'simpan']);
 
-// dokter
 Route::get('/jadwal-saya', function () {
     return view('dokter/jadwal-saya');
 });
