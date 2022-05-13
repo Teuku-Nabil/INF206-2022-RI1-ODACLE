@@ -10,14 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-
     <link rel="shortcut icon" href="assets/icon/blue.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/user/updateprofil.css">
-    <title>Update Foto</title>
+    <link rel="stylesheet" href="style/halamanawal.css">
+    <link rel="stylesheet" href="style/dokter/jadwal-saya.css">
+    <link rel="stylesheet" href="style/dokter/riwayat-praktik.css">
+
+    <title>Riwayat Praktik</title>
 </head>
 
 <body>
-    {{-- navbar --}}
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             {{-- logo odacle --}}
@@ -42,7 +43,7 @@
                         <a class="nav-link" aria-current="page" href="#">Jadwal Praktik Dokter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/riwayat">Riwayat Praktik</a>
+                        <a class="nav-link active" href="/riwayat">Riwayat Praktik</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout">logout</a>
@@ -64,47 +65,54 @@
         </div>
         </div>
     </nav>
-
-    {{-- garis navbar --}}
-    <img src="assets/images/garis.png" alt="garis" width="1600px">
-
-    {{-- konten --}}
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">
-                        Update Foto
-                    </div>
-
-                    <div class="card-body">
-                        <form method="POST" action="{{ route('foto.upload') }}" enctype="multipart/form-data">
-                            @csrf
-
-                            <div class="form-group row">
-                                <label for="image" class="col-md-4 col-form-label text-md-right">Masukkan Foto</label>
-                                <img alt="image" src="{{ asset('assets/images/' . Auth::user()->image) }}"
-                                    class="img-fluid rounded-circle"
-                                    style="width: 200px; height: 200px; padding: 10px; margin: 0px;">
-                                <input name="image" type="file" class="form-control-file" id="image">
-                                <p class="text-danger">{{ $errors->first("image") }}</p>
-                            </div>
-
-                            <div class="form-group row mb-0">
-                                <div class="col-md-6 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
-                                        Update Foto
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+    <div class="table-container">
+        <div class="table-logo position-relative" style="background-color: #DDE9FC">
+            <img src="assets/images/ODACLE Logo.png" alt="logo-odacle"
+                class="logo position-absolute top-50 start-3 translate-middle-y" style="height: 70px">
+            <h2 style="padding-bottom: 20px">
+                <center>Jadwal Praktik Dokter</center>
+            </h2>
         </div>
+        <table class="table table-hover table-striped">
+            <tr>
+                <th>No</th>
+                <th>Dokter</th>
+                <th>Spesialis</th>
+                <th>Tanggal Berobat</th>
+                <th>Keluhan</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr style="background-color: #DDE9FC">
+                <td>1</td>{{-- masukkan id --}}
+                <td>Alfreds Futterkiste</td>
+                <td>Bedah Rahang</td>
+                <td>29 maret 3030</td>
+                <td>Rahang tak normal</td>
+                <td>pemeriksaan awal</td>
+            </tr>
+            <tr style="background-color: #DDE9FC">
+                <td>1</td>{{-- masukkan id --}}
+                <td>Alfreds Futterkiste</td>
+                <td>Bedah Rahang</td>
+                <td>21 April 3030</td>
+                <td>lanjutan pemeriksaan</td>
+                <td>Konsultasi Ulang</td>
+            </tr>
+            <tr style="background-color: #DDE9FC">
+                <td>1</td>{{-- masukkan id --}}
+                <td>Alfreds Futterkiste</td>
+                <td>Bedah Rahang</td>
+                <td>5 Mei 3030</td>
+                <td>gigi berlubang</td>
+                <td>pemeriksaan awal</td>
+            </tr>
+        </table>
     </div>
 
-
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 
 </body>
 

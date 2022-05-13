@@ -26,6 +26,21 @@ body {
     border-radius: 15px;
 }
 
+.profil p{
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    margin-left: 15px;
+}
+
+.profil a img{
+    border-radius: 15px;
+    width: 60px; 
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
 .container {
     max-width: 1170px;
     padding: 0 15px;
@@ -134,3 +149,4 @@ body {
     font-size: 15px;
     color: black;
 }
+

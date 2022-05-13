@@ -15,4 +15,9 @@ class BerandaController extends Controller
     {
         return view('dokter.beranda');
     }
+
+    public function riwayat()
+    {
+        return view('user.riwayat-praktik');
+    }
 }

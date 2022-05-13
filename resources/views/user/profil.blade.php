@@ -19,48 +19,51 @@
 <body>
     {{-- navbar --}}
     <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                {{-- logo odacle --}}
-                <nav class="navbar navbar-light">
-                    <div class="container">
-                        <a class="navbar-brand" href="#">
-                            <img src="assets/images/ODACLE Logo.png" alt="logo odacle" height="60">
-                        </a>
-                    </div>
-                </nav>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="beranda">Beranda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Riwayat Praktik</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Konsultasi Lanjutan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="logout">logout</a>
-                        </li>
-                    </ul>
+        <div class="container">
+            {{-- logo odacle --}}
+            <nav class="navbar navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/ODACLE Logo.png" alt="logo odacle" height="60">
+                    </a>
                 </div>
+            </nav>
 
-                <h1 class="nama-profil">{{Auth::user()->nama}}</h1>
-                <div class="position-relative">
-                    <div class="position-absolute top-0 end-10">
-                        <a href="profil">
-                        <img src="{{ asset('assets/images/' . Auth::user()->image) }}"
-                            class="image rounded-circle" type="button" alt="user"
-                            style="width: 80px; height: 80px; padding: 10px; margin: 0px;">
-                        </a>
-                    </div>
-                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Jadwal Praktik Dokter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/riwayat">Riwayat Praktik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout">logout</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="profil">
+                    <p class="text">{{Auth::user()->nama}}</p>
+                </li>
+                <li class="profil">
+                    <a href="/profil">
+                        <img src="{{ asset('assets/images/' . Auth::user()->image) }}" alt="user"
+                            class="image rounded-circle">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
 
     {{-- garis navbar --}}
     <img src="assets/images/garis.png" alt="garis" width="1600px">
@@ -77,7 +80,8 @@
                     <form>
                         <div class="col">
                             <img class="img-profile mx-auto d-block rounded-circle"
-                                src="{{ asset('assets/images/'. Auth::user()->image) }}" alt="user" style="width: 200px; height: 200px; padding: 10px; margin: 0px;">
+                                src="{{ asset('assets/images/'. Auth::user()->image) }}" alt="user"
+                                style="width: 200px; height: 200px; padding: 10px; margin: 0px;">
                             <a class="btn btn-success" href="/updatefoto">Update Foto</a>
                         </div>
 

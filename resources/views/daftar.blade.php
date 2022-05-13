@@ -29,6 +29,11 @@
                     <div class="form-group">
                         <label>NIK</label>
                         <input type="textarea" name="nik" class="form-control" placeholder="Masukkan NIK">
+                        @if($errors->has('nik'))
+                        <strong><div class="text-danger">
+                            {{ $errors->first('nik') }}
+                        </div></strong>
+                        @endif
                     </div>
                     <div class="form-group">
                         <label>Tanggal Lahir</label>
@@ -41,6 +46,11 @@
                     <div class="form-group">
                         <label>Email </label>
                         <input type="email" name="email" class="form-control" placeholder="email@example.com">
+                        @if($errors->has('email'))
+                        <strong><div class="text-danger">
+                            {{ $errors->first('email') }}
+                        </div></strong>
+                        @endif
                     </div>
                     <div class="form-group">
                         <label>Password </label>
