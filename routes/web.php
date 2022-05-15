@@ -58,6 +58,10 @@ Route::get('/antrian', function () {
     return view('user/antrian');
 });
 
+Route::get('/regist', function () {
+    return view('user/registrasi');
+});
+
 Route::get('/pilih-spesialis', function () {
     return view('user/pilih-spesialis');
 });
