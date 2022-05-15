@@ -30,4 +30,4 @@ Route::get('/halamandokter', function () {
 
 Route::get('/halamanutama', function () {
     return view('halamanutama');
-}); 
+});
