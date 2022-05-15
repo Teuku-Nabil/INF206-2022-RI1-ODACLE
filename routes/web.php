@@ -16,47 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('halamanawal');
 });
-
-Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login')->middleware('guest');
-Route::post('/login', [App\Http\Controllers\LoginController::class, 'actionlogin']);
-
-Route::get('/daftar', [App\Http\Controllers\RegisterController::class, 'daftar'])->middleware('guest');
-Route::post('/daftar', [App\Http\Controllers\RegisterController::class, 'simpan']);
-
-
-Route::group(['middleware' => ['auth', 'ceklevel:pasien']], function(){
-    Route::get('/beranda', [App\Http\Controllers\BerandaController::class, 'index']);
-    Route::get('/logout', [App\Http\Controllers\LoginController::class, 'logoutpasien']);
-    Route::get('/profil', [App\Http\Controllers\ProfileController::class, 'index'])->name('profil.index');
-    Route::get('/updateprofil', [App\Http\Controllers\ProfileController::class, 'edit']);
-    Route::patch('/profil', [App\Http\Controllers\ProfileController::class, 'update'])->name('profil.update');
-    Route::get('/updatefoto', [App\Http\Controllers\ProfileController::class, 'foto']);
-    Route::post('/profil', [App\Http\Controllers\ProfileController::class, 'upload'])->name('foto.upload');
+Route::get('/login', function () {
+    return view('login');
 });
 
-Route::group(['middleware' => ['auth', 'ceklevel:dokter']], function(){
-    Route::get('/beranda-dokter', [App\Http\Controllers\BerandaController::class, 'berandadokter']);
-    Route::get('/logout-dokter', [App\Http\Controllers\LoginController::class, 'logoutdokter']);
+Route::get('/daftar', function () {
+    return view('daftar');
 });
 
-Route::get('/bg', function () {
-    return view('template/background');
+Route::get('/halamandokter', function () {
+    return view('halamandokter');
 });
 
-
-// dokter
-Route::get('/jadwal-saya', function () {
-    return view('dokter/jadwal-saya');
-});
-
-Route::get('/antrian', function () {
-    return view('user/antrian');
-});
-
-Route::get('/pilih-spesialis', function () {
-    return view('user/pilih-spesialis');
-});
-
-Route::get('/data-dokter', function () {
-    return view('dokter/data-dokter');
-});
+Route::get('/halamanutama', function () {
+    return view('halamanutama');
+}); 
