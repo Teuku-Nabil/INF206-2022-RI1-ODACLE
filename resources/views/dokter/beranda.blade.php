@@ -79,21 +79,21 @@
                         <img class="fea-img" src="assets/features/dokter kami.png" alt="dokter kami">
                         <div class="fea-text">
                             <h4>Dokter Kami</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloribus architecto nihil tempora placeat. Doloribus, iure soluta cumque quia sunt pariatur labore natus quos repellat animi eius obcaecati? Mollitia, placeat.</p>
+                            <p>Kami memiliki dokter bedah mulut dan gigi yang sudah memiliki sertifikat internasional dan juga memiliki kualitas dokter lulusan perguruan tinggi ternama di indonesia maupun di luar negeri. Kami memiliki 10 dokter dan 10 perawat. Kami memiliki dokter yang ahli pada spesialis-spesialis bidang mulut dan gigi.</p>
                         </div>
                     </div>
                     <div class="feature col-md-3" style="background-color: #469CAF">
                         <img class="fea-img" src="assets/features/fasilitas.png" alt="pelayanan">
                         <div class="fea-text">
                             <h4>Layanan</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quidem quas molestias, maxime veritatis dolorem pariatur sequi, est fuga earum voluptatum doloribus laboriosam dignissimos illum error aspernatur facilis veniam neque.</p>
+                            <p>Klinik ODACLE adalah klinik pertama di Aceh yang memiliki layanan full service online, Dimana semua pelayanan bisa dilakukan melalui aplikasi ODACLE.COM. Kami memiliki sistem layanan yang sangat teraktif dalam mengupdate informasi-informasi terbaru. </p>
                         </div>
                     </div>
                     <div class="feature col-md-3" style="background-color: #257F92">
                         <img class="fea-img" src="assets/features/suntik.png" alt="perawatan">
                         <div class="fea-text">
                             <h4>Perawatan</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi vero ipsa earum qui commodi incidunt deleniti soluta asperiores ipsam doloremque. Aperiam ab omnis, facere commodi dolor et placeat vel unde.</p>
+                            <p>Klinik Odacle memiliki peringkat terbaik dalam kinerja perawatan yang dilakukan oleh dokter dan perawat. Klinik Odacle selalu memeriksa pasien-pasien yang sedang dalam kondisi perawatan intens. Odacle juga memiliki peraturan ketat bagi pekerja nya dimana mereka tidak bisa meninggalkan pasien yang sedang dirawat.</p>
                         </div>
                     </div>
                 </div>

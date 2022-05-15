@@ -103,7 +103,7 @@ body {
 }
 
 .fea-img {
-    bottom: 150px;
+    bottom: 250px;
     position: absolute;
     z-index: 2;
     display: block;
@@ -120,7 +120,7 @@ body {
     padding: 15px 20px;
     border-radius: 15px;
     position: absolute;
-    left: 1100px;
+    left: 1 100px;
     bottom: -50px;
 }
 

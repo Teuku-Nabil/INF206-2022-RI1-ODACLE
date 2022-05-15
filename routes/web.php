@@ -23,6 +23,14 @@ Route::get('/', function () {
 // Route::get('/daftar', [App\Http\Controllers\RegisterController::class, 'daftar'])->middleware('guest');
 // Route::post('/daftar', [App\Http\Controllers\RegisterController::class, 'simpan']);
 
+Route::get('/login', [App\Http\Controllers\LoginController::class, 'login']);
+Route::post('/login', [App\Http\Controllers\LoginController::class, 'actionlogin']);
+
+Route::get('/daftar', [App\Http\Controllers\RegisterController::class, 'daftar']);
+Route::post('/daftar', [App\Http\Controllers\RegisterController::class, 'simpan']);
+
+Route::get('/beranda-dokter', [App\Http\Controllers\BerandaController::class, 'berandadokter']);
+Route::get('/logout-dokter', [App\Http\Controllers\LoginController::class, 'logoutdokter']);
 
 // Route::group(['middleware' => ['auth', 'ceklevel:pasien']], function () {
 //     Route::get('/beranda', [App\Http\Controllers\BerandaController::class, 'index']);
