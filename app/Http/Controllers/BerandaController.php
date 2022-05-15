@@ -20,4 +20,9 @@ class BerandaController extends Controller
     {
         return view('user.riwayat-praktik');
     }
+
+    public function regis()
+    {
+        return view('user.registrasi');
+    }
 }

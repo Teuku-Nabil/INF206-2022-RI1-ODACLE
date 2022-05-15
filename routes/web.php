@@ -33,6 +33,7 @@ Route::group(['middleware' => ['auth', 'ceklevel:pasien']], function(){
     Route::get('/updatefoto', [App\Http\Controllers\ProfileController::class, 'foto']);
     Route::post('/profil', [App\Http\Controllers\ProfileController::class, 'upload'])->name('foto.upload');
     Route::get('/riwayat', [App\Http\Controllers\BerandaController::class, 'riwayat']);
+    Route::get('/registrasi', [App\Http\Controllers\BerandaController::class, 'regis']);
 });
 
 Route::group(['middleware' => ['auth', 'ceklevel:dokter']], function(){

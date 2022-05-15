@@ -76,9 +76,9 @@ body {
     margin: 20px 0;
 }
   
-.btn-wrapper p {
+  .btn-wrapper p {
     margin: 10px 0;
-}
+  }
 
 .btn {
     background-color: #2C2B2B;
@@ -98,27 +98,22 @@ body {
 }
   
 .require {
-    margin-top: 100px;
+    margin-top: 280px;
     height: 700px;
 }
 
-.require {
-    margin-top: 250px;
-}
-
 .feature {
-    /* background-color: aqua; */
     text-align: center;
-    padding: 100px 20px 75px 20px;
+    padding: 120px 20px 30px 20px;
     position: relative;
 }
 
 .fea-img {
-    bottom: 150px;
+    bottom: 110px;
     position: absolute;
     z-index: 2;
     display: block;
-    padding-bottom: 160px;
+    padding-bottom: 260px;
 }
 
 
@@ -131,7 +126,7 @@ body {
     padding: 15px 20px;
     border-radius: 15px;
     position: absolute;
-    left: 1100px;
+    left: 1000px;
     bottom: -50px;
 }
 
@@ -145,4 +140,3 @@ body {
     font-size: 15px;
     color: black;
 }
-
