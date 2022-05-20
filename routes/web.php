@@ -78,3 +78,7 @@ Route::get('/registrasi', function () {
     return view('user/registrasi');
 });
 
+Route::get('/spesialis-gigi-anak', function () {
+    return view('dokter/spesialis-gigi-anak');
+});
+
