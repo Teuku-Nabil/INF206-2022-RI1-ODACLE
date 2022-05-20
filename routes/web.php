@@ -16,24 +16,46 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('halamanawal');
 });
-Route::get('/login', function () {
-    return view('login');
+
+Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login')->middleware('guest');
+Route::post('/login', [App\Http\Controllers\LoginController::class, 'actionlogin']);
+
+Route::get('/daftar', [App\Http\Controllers\RegisterController::class, 'daftar'])->middleware('guest');
+Route::post('/daftar', [App\Http\Controllers\RegisterController::class, 'simpan']);
+
+
+Route::group(['middleware' => ['auth', 'ceklevel:pasien']], function(){
+    Route::get('/beranda', [App\Http\Controllers\BerandaController::class, 'index']);
+    Route::get('/logout', [App\Http\Controllers\LoginController::class, 'logoutpasien']);
+    Route::get('/profil', [App\Http\Controllers\ProfileController::class, 'index'])->name('profil.index');
+    Route::get('/updateprofil', [App\Http\Controllers\ProfileController::class, 'edit']);
+    Route::patch('/profil', [App\Http\Controllers\ProfileController::class, 'update'])->name('profil.update');
+    Route::get('/updatefoto', [App\Http\Controllers\ProfileController::class, 'foto']);
+    Route::post('/profil', [App\Http\Controllers\ProfileController::class, 'upload'])->name('foto.upload');
+    Route::get('/riwayat', [App\Http\Controllers\BerandaController::class, 'riwayat']);
+    Route::get('/registrasi', [App\Http\Controllers\BerandaController::class, 'regis']);
 });
 
-Route::get('/daftar', function () {
-    return view('daftar');
+Route::group(['middleware' => ['auth', 'ceklevel:dokter']], function(){
+    Route::get('/beranda-dokter', [App\Http\Controllers\BerandaController::class, 'berandadokter']);
+    Route::get('/logout-dokter', [App\Http\Controllers\LoginController::class, 'logoutdokter']);
+    Route::get('/profil-dokter', [App\Http\Controllers\ProfileController::class, 'profildokter'])->name('profil.dokter');
+    Route::get('/updateprofil-dokter', [App\Http\Controllers\ProfileController::class, 'ubah']);
+    Route::patch('/profil-dokter', [App\Http\Controllers\ProfileController::class, 'updatedokter'])->name('profil.updatedokter');
+    Route::get('/updatefoto-dokter', [App\Http\Controllers\ProfileController::class, 'fotodokter']);
+    Route::post('/profil-dokter', [App\Http\Controllers\ProfileController::class, 'uploaddokter'])->name('fotodokter.upload');
 });
 
-Route::get('/halamandokter', function () {
-    return view('halamandokter');
+Route::get('/bg', function () {
+    return view('template/background');
 });
 
-Route::get('/halamanutama', function () {
-    return view('halamanutama');
+
+// dokter
+Route::get('/jadwal-saya', function () {
+    return view('dokter/jadwal-saya');
 });
-<<<<<<< HEAD
-Route::get('/jadwaldokter', function () {
-    return view('jadwaldokter');
+
+Route::get('/antrian', function () {
+    return view('user/antrian');
 });
-=======
->>>>>>> 2008107010077
