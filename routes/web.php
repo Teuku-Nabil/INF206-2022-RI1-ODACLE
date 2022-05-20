@@ -90,3 +90,7 @@ Route::get('/spesialis-radiologi-gigi', function () {
     return view('dokter/spesialis-radiologi-gigi');
 });
 
+Route::get('/spesialis-ortodensi', function () {
+    return view('dokter/spesialis-ortodensi');
+});
+
