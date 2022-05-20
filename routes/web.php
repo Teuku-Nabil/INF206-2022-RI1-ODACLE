@@ -82,3 +82,7 @@ Route::get('/spesialis-gigi-anak', function () {
     return view('dokter/spesialis-gigi-anak');
 });
 
+Route::get('/spesialis-periodonsia', function () {
+    return view('dokter/spesialis-periodonsia');
+});
+
