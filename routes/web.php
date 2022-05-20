@@ -86,3 +86,7 @@ Route::get('/spesialis-periodonsia', function () {
     return view('dokter/spesialis-periodonsia');
 });
 
+Route::get('/spesialis-radiologi-gigi', function () {
+    return view('dokter/spesialis-radiologi-gigi');
+});
+
