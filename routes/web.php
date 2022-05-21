@@ -48,6 +48,7 @@ Route::group(['middleware' => ['auth', 'ceklevel:dokter']], function(){
     Route::patch('/profil-dokter', [App\Http\Controllers\ProfileController::class, 'updatedokter'])->name('profil.updatedokter');
     Route::get('/updatefoto-dokter', [App\Http\Controllers\ProfileController::class, 'fotodokter']);
     Route::post('/profil-dokter', [App\Http\Controllers\ProfileController::class, 'uploaddokter'])->name('fotodokter.upload');
+    Route::get('/jadwal-praktik', [App\Http\Controllers\BerandaController::class, 'jadwalpraktik']);
 });
 
 Route::get('/bg', function () {

@@ -25,4 +25,9 @@ class BerandaController extends Controller
     {
         return view('user.registrasi');
     }
+
+    public function jadwalpraktik()
+    {
+        return view('dokter.jadwal-saya');
+    }
 }
