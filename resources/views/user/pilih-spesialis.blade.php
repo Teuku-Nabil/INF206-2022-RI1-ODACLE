@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="style/halamanawal.css">
     <link rel="stylesheet" href="style/user/pilih-spesialis.css">
+    <link rel="stylesheet" href="style/dokter/riwayat-praktik.css">
     <link rel="shortcut icon" href="assets/icon/blue.png" type="image/x-icon">
 
     <title>ODACLE</title>
@@ -23,21 +24,34 @@
     <div class="container">
         <h1 style="text-align: center; color:white;">Pilih Spesialis Yang Anda Inginkan</h1>
         <div class="btn-wrapper">
-            <div class="pilihan">
-                <a href="logindokter" class="btn btn-light position-absolute top-0 start-0 mt-5">Spesialis<br>Konservasi Gigi</a>
-            </div>
-            <div class="pilihan">
-                <a href="logindokter" class="btn btn-light position-absolute top-0 end-0 mt-5">Spesialis<br>Gigi Anak</a>
-            </div>
-            <div class="pilihan">
-                <a href="logindokter" class="btn btn-light position-absolute top-50 start-50 translate-middle">Spesialis<br>Ortodonti</a>
-            </div>
-            <div class="pilihan">
-                <a href="logindokter" class="btn btn-light position-absolute bottom-0 start-0 mb-5">Spesialis<br>Periodonsia</a>
-            </div>
-            <div class="pilihan">
-                <a href="logindokter" class="btn btn-light position-absolute bottom-0 end-0 mb-5">Spesialis<br>Radiologi Gigi</a>
-            </div>
+            <tr>
+                <td>
+                    <div class="pilihan">
+                        <a href="gigi-anak" class="btn btn-light">Spesialis<br>Gigi Anak</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="pilihan">
+                        <a href="ortodonsia" class="btn btn-light">Spesialis<br>Ortodonsia</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="pilihan">
+                        <a href="periodonsia" class="btn btn-light">Spesialis<br>Periodonsia</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="pilihan">
+                        <a href="radiologi-gigi" class="btn btn-light">Spesialis<br>Radiologi Gigi</a>
+                    </div>
+                </td>
+            </tr>
         </div>
     </div>
 

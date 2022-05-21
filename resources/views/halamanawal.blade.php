@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style/halamanawal.css">
     <link rel="shortcut icon" href="assets/icon/blue.png" type="image/x-icon">
 
-    <title>Beranda</title>
+    <title>Landing Page</title>
 </head>
 
 <body>

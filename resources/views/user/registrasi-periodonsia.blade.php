@@ -11,7 +11,6 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="assets/icon/blue.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/halamanawal.css">
     <link rel="stylesheet" href="style/user/registrasi.css">
 
     <title>Pilih Jadwal & Dokter</title>
@@ -22,6 +21,30 @@
         @csrf
         <div class="container justify-content-center">
             <h1 class="mb-5">PILIH JADWAL & DOKTER</h1>
+            <section>
+                <h1>Spesialis Periodonsia</h1>
+                <div class="data-dokter">
+                    <img class="img-dokter rounded-circle" src="assets/images/dokter.png" alt="dokter">
+                    <div class="data-rinci">
+                        <h4><span>Drg.Fitri,SpPerio</span></h4>
+                        <ul>
+                            <li class="btn">Senin &ensp; 08.00 - 12.00</li>
+                            <li class="btn">Selasa &ensp; 14.00 - 18.00</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="data-dokter">
+                    <img class="img-dokter rounded-circle" src="assets/images/dokter.png" alt="dokter">
+                    <div class="data-rinci">
+                        <h4><span>Drg.Ahmad,SpPerio</span></h4>
+                        <ul>
+                            <li class="btn">Kamis &ensp; 08.00 - 12.00</li>
+                            <li class="btn">Jum'at &ensp; 14.00 - 18.00</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
             <form>
                 <div class="form-group">
                     <label>Dokter</label>
@@ -31,11 +54,8 @@
                             Pilih Dokter
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Drg.Yanti,SpKG.</a></li>
-                            <li><a class="dropdown-item" href="#">Drg.Nabil,SpKG.</a></li>
-                            <li><a class="dropdown-item" href="#">Drg.Putri,SpKGA. </a></li>
-                            <li><a class="dropdown-item" href="#">Drg.Manda,SpRKG. </a></li>
-                            <li><a class="dropdown-item" href="#">Drg.Fazil,SpKGA. </a></li>
+                            <li><a class="dropdown-item" href="#">Drg.Fitri,SpPerio.</a></li>
+                            <li><a class="dropdown-item" href="#">Drg.Ahmad,SpPerio.</a></li>
                         </ul>
                     </div>
                 </div>
@@ -47,11 +67,8 @@
                             Pilih Jadwal
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Drg.Yanti,SpKG.</a></li>
-                            <li><a class="dropdown-item" href="#">Drg.Nabil,SpKG.</a></li>
-                            <li><a class="dropdown-item" href="#">Drg.Putri,SpKGA. </a></li>
-                            <li><a class="dropdown-item" href="#">Drg.Manda,SpRKG. </a></li>
-                            <li><a class="dropdown-item" href="#">Drg.Fazil,SpKGA. </a></li>
+                            <li><a class="dropdown-item" href="#">08.00 - 12.00</a></li>
+                            <li><a class="dropdown-item" href="#">14.00 - 18.00</a></li>
                         </ul>
                     </div>
                 </div>

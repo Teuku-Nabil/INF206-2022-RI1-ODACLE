@@ -17,20 +17,15 @@ Route::get('/', function () {
     return view('halamanawal');
 });
 
+Route::get('/gigi-anak', function () {
+    return view('user/registrasi-gigi-anak');
+});
+
 Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login')->middleware('guest');
 Route::post('/login', [App\Http\Controllers\LoginController::class, 'actionlogin']);
 
 Route::get('/daftar', [App\Http\Controllers\RegisterController::class, 'daftar'])->middleware('guest');
 Route::post('/daftar', [App\Http\Controllers\RegisterController::class, 'simpan']);
-
-Route::get('/radiologi', function () {
-    return view('dokter.radiologi-gigi');
-});
-
-Route::get('/gigi-anak', function () {
-    return view('dokter.gigi-anak');
-});
-
 
 Route::group(['middleware' => ['auth', 'ceklevel:pasien']], function(){
     Route::get('/beranda', [App\Http\Controllers\BerandaController::class, 'index']);
@@ -41,7 +36,12 @@ Route::group(['middleware' => ['auth', 'ceklevel:pasien']], function(){
     Route::get('/updatefoto', [App\Http\Controllers\ProfileController::class, 'foto']);
     Route::post('/profil', [App\Http\Controllers\ProfileController::class, 'upload'])->name('foto.upload');
     Route::get('/riwayat', [App\Http\Controllers\BerandaController::class, 'riwayat']);
-    Route::get('/registrasi', [App\Http\Controllers\BerandaController::class, 'regis']);
+    Route::get('/pilih-spesialis', [App\Http\Controllers\BerandaController::class, 'regis']);
+    Route::get('/gigi-anak', [App\Http\Controllers\BerandaController::class, 'gigi']);
+    Route::get('/ortodonsia', [App\Http\Controllers\BerandaController::class, 'ortodonsia']);
+    Route::get('/periodonsia', [App\Http\Controllers\BerandaController::class, 'periodonsia']);
+    Route::get('/radiologi-gigi', [App\Http\Controllers\BerandaController::class, 'radiologi']);
+
 });
 
 Route::group(['middleware' => ['auth', 'ceklevel:dokter']], function(){
