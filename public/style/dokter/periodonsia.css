@@ -25,6 +25,7 @@ section {
     overflow: hidden;
     border-radius: 50%;
     margin-left: 50px;
+    margin-right: 100px;
     box-shadow: 5px 10px 8px 10px #888888;
 }
 

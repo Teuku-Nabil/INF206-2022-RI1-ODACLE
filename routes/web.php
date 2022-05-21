@@ -27,6 +27,10 @@ Route::get('/radiologi', function () {
     return view('dokter.radiologi-gigi');
 });
 
+Route::get('/gigi-anak', function () {
+    return view('dokter.gigi-anak');
+});
+
 
 Route::group(['middleware' => ['auth', 'ceklevel:pasien']], function(){
     Route::get('/beranda', [App\Http\Controllers\BerandaController::class, 'index']);
