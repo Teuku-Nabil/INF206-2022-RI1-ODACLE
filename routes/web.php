@@ -14,20 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('halamanawal');
-});
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/daftar', function () {
-    return view('daftar');
-});
-
-Route::get('/halamandokter', function () {
-    return view('halamandokter');
-});
-
-Route::get('/halamanutama', function () {
-    return view('halamanutama');
+    return view('welcome');
 });
