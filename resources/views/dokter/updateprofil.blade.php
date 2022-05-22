@@ -38,10 +38,7 @@
                             <a class="nav-link" aria-current="page" href="beranda-dokter">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Jadwal Praktik Dokter</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Jadwal Hari Ini</a>
+                            <a class="nav-link" aria-current="page" href="/jadwal-praktik">Jadwal Praktik Dokter</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="logout-dokter">logout</a>

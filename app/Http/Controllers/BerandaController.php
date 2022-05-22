@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\RegisPasien;
+use App\Models\PasienDaftar;
+use Illuminate\Support\Facades\Auth;
 
 class BerandaController extends Controller
 {
@@ -31,9 +33,10 @@ class BerandaController extends Controller
 
     public function jadwalpraktik()
     {
-        return view('dokter.jadwal-saya');
+        $pasiendaftar = PasienDaftar::select('*')->get();
+        return view('dokter.jadwal-saya', compact('pasiendaftar'));
     }
-
+    
     public function gigi()
     {
         return view('user.registrasi-gigi-anak');
@@ -61,8 +64,18 @@ class BerandaController extends Controller
             'nik'=>$request->nik,
             'dokter'=>$request->dokter,
             'waktu'=>$request->waktu,
-            'keluhan'=>$request->keluhan
+            'keluhan'=>$request->keluhan,
+            'tanggal'=>date("Y-m-d")
         ]);
+
+        DB::table('pasiendaftar')->insert([
+            'nama'=>Auth::user()->nama,
+            'nik'=>Auth::user()->nik,
+            'no_hp'=>Auth::user()->nohp,
+            'tanggal'=>date('Y-m-d'),
+            'hari'=>date('l')
+        ]);
+
         echo "<script>alert('Registrasi Berhasil');</script>";
         return redirect('/antrian');
     }

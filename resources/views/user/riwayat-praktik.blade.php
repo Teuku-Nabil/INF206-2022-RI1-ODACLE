@@ -43,7 +43,7 @@
                         <a class="nav-link active" href="/riwayat">Riwayat Praktik</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Jadwal Praktik Dokter</a>
+                        <a class="nav-link" aria-current="page" href="/jadwal">Jadwal Praktik Dokter</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout">logout</a>
@@ -78,6 +78,7 @@
                 <th>No</th>
                 <th>Dokter</th>
                 <th>Waktu</th>
+                <th>Tanggal Periksa</th>
                 <th>Keluhan</th>
                 <th>Catatan Dokter</th>
             </tr>
@@ -86,6 +87,7 @@
                 <td>#</td>
                 <td>{{$r->dokter}}</td>
                 <td>{{$r->waktu}}</td>
+                <td>{{$r->tanggal}}</td>
                 <td>{{$r->keluhan}}</td>
                 <td>{{$r->status}}</td>
             </tr>

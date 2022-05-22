@@ -44,9 +44,6 @@
                         <a class="nav-link" aria-current="page" href="jadwal-praktik">Jadwal Praktik Dokter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Jadwal Hari Ini</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="logout-dokter">logout</a>
                     </li>
                 </ul>
@@ -73,7 +70,7 @@
             <h1>ODACLE</h1>
             <p>Oracle Dental Care</p>
             <div class="btn-wrapper">
-                <a href="#" class="btn">Jadwal Hari Ini</a>
+                <a href="#" class="btn">Jadwal Praktik</a>
                 {{-- <a href="#" class="btn">Ajukan Konsultasi Lanjutan</a> --}}
             </div>
         </div>
