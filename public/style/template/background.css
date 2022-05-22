@@ -1,0 +1,33 @@
+body {
+    background-color: #0D6578;
+    /* position: relative; */
+    /* width: 1728px; */
+    /* height: 1117px; */
+    background: #0D6578;
+    /* background-blend-mode: multiply; */
+    /* background-image: url("/assets/images/halaman awal.png"); */
+    background-repeat: no-repeat;
+}
+
+.ellipse-atas {
+    border-radius: 484.5px/471.5px;
+    position: absolute;
+    z-index: 9;
+    width: 769px;
+    height: 743px;
+    left: 951px;
+    top: -255px;
+    background: #469CAF;
+}
+
+.ellipse-bawah {
+    border-radius: 283px/268px;
+    position: absolute;
+    width: 566px;
+    height: 536px;
+    left: -163px;
+    top: 620px;
+    background: #469CAF;
+}
+
+

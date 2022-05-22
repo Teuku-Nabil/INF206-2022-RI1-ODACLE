@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0d6578;
+}
+
+.container {
+    padding: 16px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.container h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.profil p{
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    margin-left: 15px;
+}
+
+.profil a img{
+    border-radius: 15px;
+    width: 60px; 
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    margin-bottom: 30px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    opacity: 0.9;
+    border-radius: 15px;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    text-align: center;
+}
+
+.form-group {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.daftar {
+    margin: 50px 450px;
+    border-radius: 15px;
+    padding: 15px 15px;
+}
+
+.img-dokter {
+    border: 1px solid #0000;
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 70px;
+    box-shadow: 5px 10px 8px 10px #888888;
+}
+
+.data-rinci {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 10px 25px;
+    text-align: center;
+    color: #5b9aa8;
+    box-shadow: 5px 10px 8px 10px #505050;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    list-style-type: none;
+}
+
+.data-dokter {
+    display: flex;
+    margin: 15px;
+    padding: 20px 20px;
+}
+
+.btn {
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid;
+    padding: 12px 20px;
+    margin-top: 5px;
+}
+
+.form-group .wide{
+    height: 40px;}
