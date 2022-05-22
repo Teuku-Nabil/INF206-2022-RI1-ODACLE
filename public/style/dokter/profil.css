@@ -1,0 +1,69 @@
+body {
+    background-color: #0D6578;
+}
+
+.navbar {
+    background-color: #0D6578;
+}
+
+.nav-link {
+    font-size: large;
+}
+
+.position-relative {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.profil p{
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    margin-left: 15px;
+}
+
+.profil a img{
+    border-radius: 15px;
+    width: 60px; 
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.nama-profil{
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.container img{
+    border-radius: 15px;
+}
+
+.title{
+    color: white;
+    padding-top: 20px;
+}
+
+.card-header {
+    font-size: 40px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: gray;
+}
+
+.row {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.col-md-4{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.btn{
+    border-radius: 15px;
+}

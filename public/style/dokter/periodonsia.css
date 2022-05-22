@@ -1,0 +1,55 @@
+body {
+    background-color: #0d6578;
+}
+
+section {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 10px 60px;
+    margin: 100px 300px;
+    text-align: center;
+    box-shadow: 5px 10px 8px 10px #242323;
+}
+
+.data-dokter {
+    display: flex;
+    margin: 15px;
+    padding: 20px 20px;
+}
+
+.img-dokter {
+    border: 1px solid #0000;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 100px;
+    box-shadow: 5px 10px 8px 10px #888888;
+}
+
+.data-rinci {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 10px 25px;
+    text-align: center;
+    color: #5b9aa8;
+    box-shadow: 5px 10px 8px 10px #505050;
+}
+
+.btn {
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid;
+    padding: 12px 20px;
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    list-style-type: none;
+}

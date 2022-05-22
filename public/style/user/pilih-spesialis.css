@@ -1,0 +1,27 @@
+.btn-wrapper {
+    position: absolute;
+    left: 720px;
+    top: 260px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pilihan .btn{
+    width: 200px;
+    height: 75px;
+    background-color: rgb(3, 49, 64);
+    color: rgb(253, 253, 253);
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 25px;
+    box-shadow: 5px 6px 8px 6px white;
+}
+
+.pilihan{
+    font-style: bold;
+}
+
+.container h1{
+    padding-top: 35px;
+}
