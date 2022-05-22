@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <form action="/daftar" method="post" class="daftar">
+    <form action="/regis" method="post" class="daftar">
         @csrf
         <div class="container justify-content-center">
             <h1 class="mb-5">PILIH JADWAL & DOKTER</h1>
@@ -47,30 +47,36 @@
             </section>
             <form>
                 <div class="form-group">
+                    <label>Nama</label>
+                    <input type="text" class="wide" name="nama" value="{{Auth::user()->nama}}" readonly>
+                </div>
+                <div class="form-group">
+                    <label>NIK</label>
+                    <input type="text" class="wide" name="nik" value="{{Auth::user()->nik}}" readonly>
+                </div>
+                <div class="form-group">
                     <label>Dokter</label>
-                    <div class="dropdown d-sm-inline" style="margin-left:20px">
-                        <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Pilih Dokter
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Drg.Manda,SpRKG.</a></li>
-                            <li><a class="dropdown-item" href="#">Drg.Abdul,SpRKG.</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control" id="dokter" name="dokter">
+                        <option value="">-- Pilih Dokter --</option>
+                        <option value="Drg.Manda.SpRGA">
+                            Drg.Manda.SpRGA</option>
+                        <option value="Drg.Abdul.SpRGA">
+                            Drg.Abdul.SpRGA</option>
+                    </select>
                 </div>
                 <div class="form-group ">
-                    <label>Jadwal</label>
-                    <div class="dropdown d-sm-inline" style="margin-left:20px">
-                        <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Pilih Jadwal
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">08.00 - 12.00</a></li>
-                            <li><a class="dropdown-item" href="#">14.00 - 18.00</a></li>
-                        </ul>
-                    </div>
+                    <label>Waktu</label>
+                    <select class="form-control" id="waktu" name="waktu">
+                        <option value="">-- Pilih Waktu --</option>
+                        <option value="08.00 - 12.00">
+                            08.00 - 12.00</option>
+                        <option value="14.00 - 18.00">
+                            14.00 - 18.00</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Keluhan</label>
+                    <input type="text" class="form-control" placeholder="Masukkan Keluhan" name="keluhan">
                 </div>
 
                 <center><button type="submit" class="registerbtn">Selanjutnya</button></center>

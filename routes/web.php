@@ -13,20 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Landing Page
 Route::get('/', function () {
     return view('halamanawal');
 });
 
-Route::get('/gigi-anak', function () {
-    return view('user/registrasi-gigi-anak');
-});
-
+//Login Page
 Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login')->middleware('guest');
 Route::post('/login', [App\Http\Controllers\LoginController::class, 'actionlogin']);
 
+//Register Page
 Route::get('/daftar', [App\Http\Controllers\RegisterController::class, 'daftar'])->middleware('guest');
 Route::post('/daftar', [App\Http\Controllers\RegisterController::class, 'simpan']);
 
+//Auth Group :  Pasien
 Route::group(['middleware' => ['auth', 'ceklevel:pasien']], function(){
     Route::get('/beranda', [App\Http\Controllers\BerandaController::class, 'index']);
     Route::get('/logout', [App\Http\Controllers\LoginController::class, 'logoutpasien']);
@@ -41,9 +41,12 @@ Route::group(['middleware' => ['auth', 'ceklevel:pasien']], function(){
     Route::get('/ortodonsia', [App\Http\Controllers\BerandaController::class, 'ortodonsia']);
     Route::get('/periodonsia', [App\Http\Controllers\BerandaController::class, 'periodonsia']);
     Route::get('/radiologi-gigi', [App\Http\Controllers\BerandaController::class, 'radiologi']);
-
+    Route::post('/regis', [App\Http\Controllers\BerandaController::class, 'regispasien']);
+    Route::get('/antrian', [App\Http\Controllers\BerandaController::class, 'antrian']);
+    Route::get('/jadwal', [App\Http\Controllers\BerandaController::class, 'jadwal']);
 });
 
+//Auth Group : Dokter 
 Route::group(['middleware' => ['auth', 'ceklevel:dokter']], function(){
     Route::get('/beranda-dokter', [App\Http\Controllers\BerandaController::class, 'berandadokter']);
     Route::get('/logout-dokter', [App\Http\Controllers\LoginController::class, 'logoutdokter']);
@@ -54,19 +57,3 @@ Route::group(['middleware' => ['auth', 'ceklevel:dokter']], function(){
     Route::post('/profil-dokter', [App\Http\Controllers\ProfileController::class, 'uploaddokter'])->name('fotodokter.upload');
     Route::get('/jadwal-praktik', [App\Http\Controllers\BerandaController::class, 'jadwalpraktik']);
 });
-
-Route::get('/bg', function () {
-    return view('template/background');
-});
-
-
-// dokter
-Route::get('/jadwal-saya', function () {
-    return view('dokter/jadwal-saya');
-});
-
-Route::get('/antrian', function () {
-    return view('user/antrian');
-});
-
-

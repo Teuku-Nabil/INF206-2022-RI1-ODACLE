@@ -44,7 +44,7 @@
                         <a class="nav-link" href="/riwayat">Riwayat Praktik</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/pilih-spesialis">Konsultasi Lanjutan</a>
+                        <a class="nav-link" aria-current="page" href="/jadwal">Jadwal Praktik Dokter</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout">logout</a>
@@ -73,13 +73,12 @@
             <h1>WELCOME TO ODACLE</h1>
             <p>your health is our priority</p>
             <div class="btn-wrapper">
-                <a href="/pilih-spesialis" class="btn">Buat Janji Dokter</a>
-                <a href="/pilih-spesialis" class="btn">Ajukan Konsultasi Lanjutan</a>
+                <a href="/pilih-spesialis" class="btn">Daftar Sekarang</a>
             </div>
         </div>
         <div class="jadwal-hari-ini">
             <h4><strong>Jadwal Praktik Hari ini</strong></h4>
-            <h5>{{ date('d-m-Y') }}</h5>
+            <h5>{{ date('l, d-m-Y') }}</h5>
             <div class="jadwal-dokter">
                 <p>Drg.Nama dokter</p>
                 <p>Spesialis apa</p>

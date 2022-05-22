@@ -56,7 +56,7 @@
         </div>
         <div class="jadwal-hari-ini">
             <h4><strong>Jadwal Praktik Hari ini</strong></h4>
-            <h5>{{ date('d-m-Y')}}</h5>
+            <h5>{{ date('l, d-m-Y')}}</h5>
             <div class="jadwal-dokter">
                 <p>Drg.Nama dokter</p>
                 <p>Spesialis apa</p>

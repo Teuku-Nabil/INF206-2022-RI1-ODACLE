@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Models\RegisPasien;
 
 class BerandaController extends Controller
 {
@@ -18,7 +20,8 @@ class BerandaController extends Controller
 
     public function riwayat()
     {
-        return view('user.riwayat-praktik');
+        $regispasien = RegisPasien::select('*')->get();
+        return view('user.riwayat-praktik', compact('regispasien'));
     }
 
     public function regis()
@@ -49,5 +52,28 @@ class BerandaController extends Controller
     public function radiologi()
     {
         return view('user.registrasi-radiologi-gigi');
+    }
+
+    public function regispasien(Request $request)
+    {
+        DB::table('regispasien')->insert([
+            'nama'=>$request->nama,
+            'nik'=>$request->nik,
+            'dokter'=>$request->dokter,
+            'waktu'=>$request->waktu,
+            'keluhan'=>$request->keluhan
+        ]);
+        echo "<script>alert('Registrasi Berhasil');</script>";
+        return redirect('/antrian');
+    }
+
+    public function antrian()
+    {
+        $regispasien = RegisPasien::select('*')->get();
+        return view('user.antrian' , compact('regispasien'));
+    }
+
+    public function jadwal(){
+        return view('user.jadwal');
     }
 }

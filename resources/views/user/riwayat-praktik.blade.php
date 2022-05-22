@@ -40,10 +40,10 @@
                         <a class="nav-link" aria-current="page" href="beranda">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Jadwal Praktik Dokter</a>
+                        <a class="nav-link active" href="/riwayat">Riwayat Praktik</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/riwayat">Riwayat Praktik</a>
+                        <a class="nav-link" aria-current="page" href="#">Jadwal Praktik Dokter</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout">logout</a>
@@ -70,42 +70,26 @@
             <img src="assets/images/ODACLE Logo.png" alt="logo-odacle"
                 class="logo position-absolute top-50 start-3 translate-middle-y" style="height: 70px">
             <h2 style="padding-bottom: 20px">
-                <center>Jadwal Praktik Dokter</center>
+                <center>Riwayat Pemeriksaan</center>
             </h2>
         </div>
         <table class="table table-hover table-striped">
             <tr>
                 <th>No</th>
                 <th>Dokter</th>
-                <th>Spesialis</th>
-                <th>Tanggal Berobat</th>
+                <th>Waktu</th>
                 <th>Keluhan</th>
-                <th>Keterangan</th>
+                <th>Catatan Dokter</th>
             </tr>
+            @foreach ($regispasien as $r)
             <tr style="background-color: #DDE9FC">
-                <td>1</td>{{-- masukkan id --}}
-                <td>Alfreds Futterkiste</td>
-                <td>Bedah Rahang</td>
-                <td>29 maret 3030</td>
-                <td>Rahang tak normal</td>
-                <td>pemeriksaan awal</td>
+                <td>#</td>
+                <td>{{$r->dokter}}</td>
+                <td>{{$r->waktu}}</td>
+                <td>{{$r->keluhan}}</td>
+                <td>{{$r->status}}</td>
             </tr>
-            <tr style="background-color: #DDE9FC">
-                <td>1</td>{{-- masukkan id --}}
-                <td>Alfreds Futterkiste</td>
-                <td>Bedah Rahang</td>
-                <td>21 April 3030</td>
-                <td>lanjutan pemeriksaan</td>
-                <td>Konsultasi Ulang</td>
-            </tr>
-            <tr style="background-color: #DDE9FC">
-                <td>1</td>{{-- masukkan id --}}
-                <td>Alfreds Futterkiste</td>
-                <td>Bedah Rahang</td>
-                <td>5 Mei 3030</td>
-                <td>gigi berlubang</td>
-                <td>pemeriksaan awal</td>
-            </tr>
+            @endforeach
         </table>
     </div>
 
