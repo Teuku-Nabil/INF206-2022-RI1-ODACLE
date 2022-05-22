@@ -69,6 +69,11 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+
+        'regispasien' => [
+            'driver' => 'database',
+            'model' => App\Models\RegisPasien::class,
+        ],
     ],
 
     /*
