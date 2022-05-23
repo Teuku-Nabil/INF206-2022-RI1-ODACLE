@@ -22,8 +22,8 @@ class BerandaController extends Controller
 
     public function riwayat()
     {
-        $regispasien = RegisPasien::select('*')->get();
-        return view('user.riwayat-praktik', compact('regispasien'));
+        $regispasien = RegisPasien::where('nama', '=', Auth::user()->nama)->get();
+        return view('user.riwayat-praktik', ['regispasien' => $regispasien]);
     }
 
     public function regis()
@@ -33,8 +33,8 @@ class BerandaController extends Controller
 
     public function jadwalpraktik()
     {
-        $pasiendaftar = PasienDaftar::select('*')->get();
-        return view('dokter.jadwal-saya', compact('pasiendaftar'));
+        $pasiendaftar = PasienDaftar::where('nama_dokter', '=', Auth::user()->nama)->get(); 
+        return view('dokter.jadwal-saya', ['pasiendaftar' => $pasiendaftar]);
     }
     
     public function gigi()
@@ -73,6 +73,7 @@ class BerandaController extends Controller
             'nik'=>Auth::user()->nik,
             'no_hp'=>Auth::user()->nohp,
             'tanggal'=>date('Y-m-d'),
+            'nama_dokter'=>$request->dokter,
             'hari'=>date('l')
         ]);
 
@@ -82,8 +83,8 @@ class BerandaController extends Controller
 
     public function antrian()
     {
-        $regispasien = RegisPasien::select('*')->get();
-        return view('user.antrian' , compact('regispasien'));
+        $regispasien = RegisPasien::where('nama', '=', Auth::user()->nama)->get();
+        return view('user.antrian' , ['regispasien' => $regispasien]);
     }
 
     public function jadwal(){

@@ -32,6 +32,7 @@
                 <th>NIK</th>
                 <th>No.hp</th>
                 <th>Hari</th>
+                <th>Dokter</th>
                 <th>Tanggal Berobat</th>
             </tr>
             @foreach($pasiendaftar as $pd)
@@ -41,6 +42,7 @@
                 <td>{{$pd->nik}}</td>
                 <td>{{$pd->no_hp}}</td>
                 <td>{{$pd->hari}}</td>
+                <td>{{$pd->nama_dokter}}</td>
                 <td>{{$pd->tanggal}}</td>
             </tr>
             @endforeach
