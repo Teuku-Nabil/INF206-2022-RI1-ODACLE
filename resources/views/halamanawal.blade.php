@@ -58,14 +58,14 @@
             <h4><strong>Jadwal Praktik Hari ini</strong></h4>
             <h5>{{ date('l, d-m-Y')}}</h5>
             <div class="jadwal-dokter">
-                <p>Drg.Nama dokter</p>
-                <p>Spesialis apa</p>
-                <p>08.00-21.00</p>
+                <p>Drg.Putri.SpKGA</p>
+                <p>Spesialis Gigi Anak</p>
+                <p>08.00-12.00</p>
             </div>
             <div class="jadwal-dokter">
-                <p>Drg.Nama dokter</p>
-                <p>Spesialis apa</p>
-                <p>08.00-21.00</p>
+                <p>Drg.Fadzil.SpKGA</p>
+                <p>Spesialis Gigi Anak</p>
+                <p>14.00-18.00</p>
             </div>
             <a href="/daftar" class="btn" style="color: black; background-color:white">Daftar</a>
         </div>
