@@ -1,25 +1,25 @@
-body {
+body{
     background-image: url("/assets/images/halaman awal.png");
     background-repeat: no-repeat;
 }
 
-.img-logo {
+.img-logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 500px;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top:60px;
+    margin-bottom:40px;
 }
 
 .garis {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
-    height: 8px;
-    background-color: black;
-    border-radius: 50px;
+    width:800px; 
+    height:8px;
+    background-color:black;
+    border-radius:50px;
 }
 
 .btn-wrapper {
@@ -27,7 +27,7 @@ body {
 }
 
 .btn-wrapper p {
-    margin: 50px;
+    margin: 50px ;
 }
 
 .masuk {
@@ -48,6 +48,6 @@ body {
     font-size: 40px;
 }
 
-.btn:hover {
+.btn:hover{
     opacity: 1;
 }
