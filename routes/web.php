@@ -14,20 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('halamanawal');
-});
-Route::get('/login', function () {
-    return view('login');
+    return view('welcome');
 });
 
-Route::get('/daftar', function () {
-    return view('daftar');
-});
-
-Route::get('/halamandokter', function () {
-    return view('halamandokter');
-});
-
-Route::get('/halamanutama', function () {
-    return view('halamanutama');
-});
+Route::get('/daftar', [App\Http\Controllers\RegisterController::class, 'daftar'])->middleware('guest');

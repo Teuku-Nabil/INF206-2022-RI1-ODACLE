@@ -17,19 +17,11 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    // protected $fillable = [
-    //     'nama',
-    //     'tanggal_lahir',
-    //     'no_hp',
-    //     'email',
-    //     'password',
-    // ];
-    protected $guarded = [];
-
-    public function setPasswordAttribute($value)
-    {
-        $this->attributes['password'] = bcrypt($value);
-    }
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+    ];
 
     /**
      * The attributes that should be hidden for serialization.

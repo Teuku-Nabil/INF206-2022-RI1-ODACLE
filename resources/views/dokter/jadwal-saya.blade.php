@@ -40,7 +40,7 @@
                 <td>082247230922</td>
                 <td>Sabtu</td>
                 <td>29 Maret 2022</td>
-                <td>Konsultasi Ulang</td>
+                
             </tr>
             <tr>
                 <td>1</td>
